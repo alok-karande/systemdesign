@@ -19,8 +19,17 @@ import os
 cache_size = int(os.getenv('CACHE_SIZE', 3))
 servers = os.getenv('SERVERS', 'server1,server2').split(',')
 replication_factor = int(os.getenv('REPLICATION_FACTOR', 2))
+### Set this variable to change how you want to run the Consistent Hashing Ring: Local or Dockerized Cache Nodes
+RUN_MODE_LOCAL = os.getenv('RUN_MODE_LOCAL', 'True') == 'True'  # Set to 'True' to use local CacheNode instances
+
+
+print ('Initializing Consistent Hashing Ring in mode:', 'Local' if RUN_MODE_LOCAL else 'Dockerized Cache Nodes')
 
 ring_controller = ConsistentHashingRingContainer(
+    cache_size=cache_size,
+    servers=servers,
+    replication_factor=replication_factor
+) if not RUN_MODE_LOCAL else ConsistentHashingRing(
     cache_size=cache_size,
     servers=servers,
     replication_factor=replication_factor

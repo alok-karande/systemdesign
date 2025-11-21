@@ -38,7 +38,7 @@ Here we use a common type of Cache called the Least-recently-used Cache. The Lea
 I use docker to deploy multiple instances of the LRU cache and manage them through consistent hashing. 
 On MAC, install Docker Desktop using this link: https://docs.docker.com/desktop/setup/install/mac-install/
 
-Once installed, run the Docker Desktop app.
+Once installed, run the Docker Desktop app. This will also start the docker process.
 
 ## 2. Install python3 and necessary packages
 
@@ -52,18 +52,115 @@ flask*
 
 The following environmental variables should be specified as required:
 
-**CACHE_SIZE**: This sets the size of the Cache for each of the Cache Nodes. 
+**CACHE_SIZE**: This sets the size of the Cache for each of the Cache Nodes. Defaulted to 3.
 
-***SERVERS***: Comma separated list of servers that are part of the consistent hash ring.
+***SERVERS***: Comma separated list of servers that are part of the consistent hash ring. Defaulted to 'server1,server2'
 
-***REPLICATION_FACTOR***: The replication factor determines how many virtual nodes are to be added. Specifying a value of 2 would mean one Server instance + one Virtual node instance. Virtual modes are used to uniformly distribute the load on one server. 
+***REPLICATION_FACTOR***: The replication factor determines how many virtual nodes are to be added. Specifying a value of 2 would mean one Server instance + one Virtual node instance. Virtual modes are used to uniformly distribute the load on one server. Defaulted to 2.
+
+***RUN_MODE_LOCAL***: The Consistent Hashing Ring runs in two modes: Local and Dockerized Container. Set this to 'True' or 'False' to toggle between the two. Defaulted to 'True'.
 
 
-## 4. Testing
+## 4. Build the docker container for the Cache
+
+On the Terminal, navigate to the cache directory and run the following command:
+```console
+docker build --no-cache -t lru_cache_node:latest .
+```
+This will genarate a docker image. You can see this in docker desktop as *lru_cache_node* in the Images tab.
+
+## 5. Testing
+
+Now you are ready to test! There are two ways to test consistent hashing
 
 ### Option 1: Local Python testing
 
+Use this if you want to test this locally. Here each Cache instance is a python class and the entire Consistent Hashing Ring runs within one Python program. To execute this navigate to the parent directory of this project and run the following on the command line:
+```console
+export RUN_MODE_LOCAL='True' 
+python3 RingAPIInvocation.py
+```
+
+This will start the Consistent Hash Ring as a flask server on port 6000. By default cache nodes are created based on the values of the environmental variables specified above. For instance if the *SERVERS* value is set to 'serverA, serverB' with *REPLICATION_FACTOR* set to 2, 2 instances of cache will be created with 4 virtual nodes spread across the hash ring (2 virtual nodes per cache).
+
+You can now invoke underlying APIs to test the consitent hash ring. See Appendix for the list of available APIs.
+
+There are two logs of interest: *consistent_hashing.log* and *lru_cache.log*. You can tail both logs to follow how the cache instances and virtual nodes are created, their hash values and how cache entries are assigned to these nodes. 
+
 ### Option 2: Testing wih docker containerized Cache nodes
+
+Use this if you want to test this using dockerized cache nodes. To execute this navigate to the parent directory of this project and run the following on the command line:
+```console
+export RUN_MODE_LOCAL='False' 
+python3 RingAPIInvocation.py
+```
+
+This will start the Consistent Hash Ring as a flask server on port 6000. By default cache nodes are created based on the values of the environmental variables specified above. For instance if the *SERVERS* value is set to 'serverA, serverB' with *REPLICATION_FACTOR* set to 2, 2 instances of cache will be created with 4 virtual nodes spread across the hash ring (2 virtual nodes per cache).
+On the Docker Desktop you can see the created server instances  under the Containers tab with the prefix *lru-cache-*. 
+
+You can now invoke underlying APIs to test the consitent hash ring. See Appendix for the list of available APIs.
+
+There are two logs of interest: *consistent_hashing.log* and *lru_cache.log*. You can tail the former on the command line. To tail the latter run the following comamnd:
+```console
+docker exec -it <Docker Container Name> tail -f /pyapp/lru_cache.log
+```
+Replace *Docker Container Name* with the appropriate container name with the prefix *lru-cache-*.
+
+## Appendix: List of APIs
+
+I use curl here, but you can run these tests in a tool like Postman too.
+
+### Server related APIs:
+
+These APIs would typically be used by an administrator or by a monitoring process/service to control the creation/deletion of servers/nodes. 
+
+1. /add_server [POST]: API to add new servers to the Consistent Hash Ring. Note: The code does not currently reallocate cache entries based on the newly added cache node. I will fix this in the next iteration.
+
+Usage: 
+```console
+curl 0.0.0.0:6000/add_server -H "Content-Type: application/json " -d '{"server": "<Server_Name>"}'
+```
+Replace *Server_Name* with a unique value. If running in dockerlized mode, you should see a new container instance showing up in Docker Desktop.
+
+
+2. /remove_server [POST]: API to add new servers to the Consistent Hash Ring. Note: The code does not currently reallocate cache entries based on the deleted cache node. I will fix this in the next iteration.
+
+Usage: 
+```console
+curl 0.0.0.0:6000/remove_server -H "Content-Type: application/json " -d '{"server": "<Server_Name>"}'
+```
+Replace *Server_Name* with a unique value. If running in dockerlized mode, you should see a new container instance showing up in Docker Desktop.
+
+3. /get_servers [GET]: API to get a list of all the servers and their associated virtual nodes and hash values.
+
+Usage:
+```console
+curl 0.0.0.0:6000/get_servers
+```
+### Cache related APIs:
+
+These APIs are used by the client to add and retrieve entries from the caches on the consistent hash ring. The API handles the addition and retrieval from the right cache node based on the consistent hashing algorithm.
+
+1. /put_cache_entry [POST]: API to add/update a cache entry.
+
+Usage: 
+```console
+curl 0.0.0.0:6000/put_cache_entry -H "Content-Type: application/json " -d '{"key":"<key>", "value":"<value>"}'
+```
+Replace *key* and *value* with the right values. 
+
+2. /get_cache_entry/<key> [GET]: API to retrieve the value of a cache entry.
+
+Usage: 
+```console
+curl 0.0.0.0:6000/get_cache_entry/<key> 
+```
+Replace *key* with the right value. 
+
+
+
+
+
 
 
 

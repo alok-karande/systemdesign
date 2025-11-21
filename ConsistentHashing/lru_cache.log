@@ -1632,3 +1632,53 @@ TypeError: The view function for 'get_cache_entry' did not return a valid respon
 2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key2
 2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key3
 2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key4
+2025-11-21 14:37:56,084 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:37:56,084 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:37:56,085 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:37:56,085 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:37:56,085 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:37:56,085 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:37:56,085 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:37:56,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.243.73.211:6000
+2025-11-21 14:37:56,108 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-21 14:38:32,698 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:38:32,698 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:38:32,698 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:38:32,698 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:38:32,698 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:38:32,698 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:38:32,698 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:38:32,714 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.243.73.211:6000
+2025-11-21 14:38:32,714 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-21 14:39:07,498 - INFO - Received request to get list of servers in the hash ring
+2025-11-21 14:39:07,500 - INFO - 127.0.0.1 - - [21/Nov/2025 14:39:07] "GET /get_servers HTTP/1.1" 200 -
+2025-11-21 14:40:04,120 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:40:04,120 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:40:04,121 - DEBUG - Found 'credsStore' section
+2025-11-21 14:40:04,149 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:40:04,150 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:40:04,150 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:40:04,150 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:40:04,205 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 14:40:04,209 - DEBUG - http://localhost:None "GET /v1.51/containers/45568f99d99f3f440f2b4d66cc1c82cd2bd4b93a2071b9179525ac0545463440/json HTTP/1.1" 200 None
+2025-11-21 14:40:04,361 - DEBUG - http://localhost:None "POST /v1.51/containers/45568f99d99f3f440f2b4d66cc1c82cd2bd4b93a2071b9179525ac0545463440/start HTTP/1.1" 204 0
+2025-11-21 14:40:04,361 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 14:40:04,361 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:40:04,361 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:40:04,361 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:40:04,478 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 14:40:04,483 - DEBUG - http://localhost:None "GET /v1.51/containers/e4802dafd4fd3316f3c44e8aa2d648650ae688bc6183366188ffef5b12fc371d/json HTTP/1.1" 200 None
+2025-11-21 14:40:04,599 - DEBUG - http://localhost:None "POST /v1.51/containers/e4802dafd4fd3316f3c44e8aa2d648650ae688bc6183366188ffef5b12fc371d/start HTTP/1.1" 204 0
+2025-11-21 14:40:04,600 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 14:40:04,600 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:40:04,651 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.243.73.211:6000
+2025-11-21 14:40:04,652 - INFO - [33mPress CTRL+C to quit[0m

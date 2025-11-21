@@ -1,1195 +1,191 @@
-
-
-
-2025-11-19 13:45:36,947 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 13:45:36,948 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 13:45:36,948 - DEBUG - Found 'credsStore' section
-2025-11-19 13:45:36,988 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 13:45:36,989 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 13:45:36,989 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 13:45:36,989 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 13:45:37,041 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 13:45:37,047 - DEBUG - http://localhost:None "GET /v1.51/containers/0e2ab8f1a2d43495feff8dd28075750ee7f229afb016bcdfbe79f03dbdc7e25a/json HTTP/1.1" 200 None
-2025-11-19 13:45:37,166 - DEBUG - http://localhost:None "POST /v1.51/containers/0e2ab8f1a2d43495feff8dd28075750ee7f229afb016bcdfbe79f03dbdc7e25a/start HTTP/1.1" 204 0
-2025-11-19 13:45:37,167 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 13:45:37,167 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 13:45:37,226 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 13:45:37,232 - DEBUG - http://localhost:None "GET /v1.51/containers/7be61e196937271e772afe21b4b09486c1f0c5f45478277e5f7e89cd5a9ac5ad/json HTTP/1.1" 200 None
-2025-11-19 13:45:37,392 - DEBUG - http://localhost:None "POST /v1.51/containers/7be61e196937271e772afe21b4b09486c1f0c5f45478277e5f7e89cd5a9ac5ad/start HTTP/1.1" 204 0
-2025-11-19 13:45:37,392 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 13:45:37,393 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 13:45:37,393 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 13:45:37,496 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 13:45:37,501 - DEBUG - http://localhost:None "GET /v1.51/containers/393be50eb0ce0190640af986e5dc664c3e84cae56888984b7a02ec72b43ef3d5/json HTTP/1.1" 200 None
-2025-11-19 13:45:37,662 - DEBUG - http://localhost:None "POST /v1.51/containers/393be50eb0ce0190640af986e5dc664c3e84cae56888984b7a02ec72b43ef3d5/start HTTP/1.1" 204 0
-2025-11-19 13:45:37,662 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 13:45:37,662 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 13:45:37,744 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 13:45:37,749 - DEBUG - http://localhost:None "GET /v1.51/containers/ba06514a7f0973649d4f27d93a8d223bbaf07af07da11934b04a0f1bfbd64ffc/json HTTP/1.1" 200 None
-2025-11-19 13:45:37,865 - DEBUG - http://localhost:None "POST /v1.51/containers/ba06514a7f0973649d4f27d93a8d223bbaf07af07da11934b04a0f1bfbd64ffc/start HTTP/1.1" 204 0
-2025-11-19 13:45:37,865 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 13:45:37,865 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 13:45:37,865 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 13:45:37,958 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 13:45:37,966 - DEBUG - http://localhost:None "GET /v1.51/containers/e8e0729da211aac74ca9dd3ffbc7ac044e13956cfbeb4db8842082eb010b198d/json HTTP/1.1" 200 None
-2025-11-19 13:45:38,108 - DEBUG - http://localhost:None "POST /v1.51/containers/e8e0729da211aac74ca9dd3ffbc7ac044e13956cfbeb4db8842082eb010b198d/start HTTP/1.1" 204 0
-2025-11-19 13:45:38,109 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 13:45:38,109 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 13:45:38,188 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 13:45:38,193 - DEBUG - http://localhost:None "GET /v1.51/containers/9b686c7aab0e348ce2e33f61d00dba29699098711992bf6f4bc3ba884f6449e3/json HTTP/1.1" 200 None
-2025-11-19 13:45:38,333 - DEBUG - http://localhost:None "POST /v1.51/containers/9b686c7aab0e348ce2e33f61d00dba29699098711992bf6f4bc3ba884f6449e3/start HTTP/1.1" 204 0
-2025-11-19 13:45:38,333 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 13:45:38,333 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 13:45:38,337 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 13:45:38,342 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 13:45:38,342 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 13:45:38,344 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 13:45:38,347 - DEBUG - http://0.0.0.0:5002 "POST /put_entry/key2 HTTP/1.1" 200 33
-2025-11-19 13:45:38,348 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 13:45:38,353 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 13:45:38,356 - DEBUG - http://0.0.0.0:5005 "POST /put_entry/key31 HTTP/1.1" 200 34
-2025-11-19 13:45:38,357 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 13:45:38,359 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 13:45:38,362 - DEBUG - http://0.0.0.0:5001 "POST /put_entry/key21 HTTP/1.1" 200 34
-2025-11-19 13:45:48,682 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 13:45:51,455 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 13:45:51,468 - DEBUG - http://0.0.0.0:5006 "GET /get_entry/key1 HTTP/1.1" 404 28
-2025-11-19 13:45:56,590 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: Expecting value: line 1 column 1 (char 0)
-2025-11-19 13:46:08,537 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 13:46:11,086 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 13:46:11,100 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 13:46:21,570 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 13:46:23,664 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 13:46:23,675 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 13:46:26,906 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 13:46:28,725 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 13:46:28,735 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 15:19:39,766 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:19:39,768 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:19:39,769 - DEBUG - Found 'credsStore' section
-2025-11-19 15:19:39,815 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:19:39,816 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:19:39,816 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:19:39,816 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:19:39,868 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:19:39,876 - DEBUG - http://localhost:None "GET /v1.51/containers/08ba0953e077118cd775ff25cd789daebae9075743613b87adcea8225d349491/json HTTP/1.1" 200 None
-2025-11-19 15:19:40,070 - DEBUG - http://localhost:None "POST /v1.51/containers/08ba0953e077118cd775ff25cd789daebae9075743613b87adcea8225d349491/start HTTP/1.1" 204 0
-2025-11-19 15:19:40,070 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:19:40,070 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:19:40,156 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:19:40,162 - DEBUG - http://localhost:None "GET /v1.51/containers/3a9be4839e1206115ea77c8d92589694835702e510e58dca43f6b6dda4c361bb/json HTTP/1.1" 200 None
-2025-11-19 15:19:40,329 - DEBUG - http://localhost:None "POST /v1.51/containers/3a9be4839e1206115ea77c8d92589694835702e510e58dca43f6b6dda4c361bb/start HTTP/1.1" 204 0
-2025-11-19 15:19:40,330 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:19:40,330 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:19:40,330 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:19:40,431 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:19:40,442 - DEBUG - http://localhost:None "GET /v1.51/containers/98f8b27635a617c830ad9ef29da159a91f7068a4b48965a006ade5ecfd290604/json HTTP/1.1" 200 None
-2025-11-19 15:19:40,620 - DEBUG - http://localhost:None "POST /v1.51/containers/98f8b27635a617c830ad9ef29da159a91f7068a4b48965a006ade5ecfd290604/start HTTP/1.1" 204 0
-2025-11-19 15:19:40,621 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:19:40,621 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:19:40,731 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:19:40,737 - DEBUG - http://localhost:None "GET /v1.51/containers/34d367717a2a55f1957249985c4ec7e23e1dda69374afed31d39ef3df5cf774a/json HTTP/1.1" 200 None
-2025-11-19 15:19:40,936 - DEBUG - http://localhost:None "POST /v1.51/containers/34d367717a2a55f1957249985c4ec7e23e1dda69374afed31d39ef3df5cf774a/start HTTP/1.1" 204 0
-2025-11-19 15:19:40,936 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:19:40,936 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:19:40,936 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:19:41,054 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:19:41,057 - DEBUG - http://localhost:None "GET /v1.51/containers/48cfecd1c4aa984cc8b03126d0a957f1a9a152f4bc9393a27bf4d683aed34825/json HTTP/1.1" 200 None
-2025-11-19 15:19:41,232 - DEBUG - http://localhost:None "POST /v1.51/containers/48cfecd1c4aa984cc8b03126d0a957f1a9a152f4bc9393a27bf4d683aed34825/start HTTP/1.1" 204 0
-2025-11-19 15:19:41,232 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:19:41,233 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:19:41,346 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:19:41,350 - DEBUG - http://localhost:None "GET /v1.51/containers/1fc7a3abea16f360a73c199f4eb8b4c1bc1ff1790eef5d40742d3c00a82085e0/json HTTP/1.1" 200 None
-2025-11-19 15:19:41,489 - DEBUG - http://localhost:None "POST /v1.51/containers/1fc7a3abea16f360a73c199f4eb8b4c1bc1ff1790eef5d40742d3c00a82085e0/start HTTP/1.1" 204 0
-2025-11-19 15:19:41,490 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:19:41,490 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:19:41,493 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:19:41,496 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:19:41,496 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:19:41,498 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:19:41,502 - DEBUG - http://0.0.0.0:5002 "POST /put_entry/key2 HTTP/1.1" 404 207
-2025-11-19 15:19:41,502 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:19:41,504 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:19:41,510 - DEBUG - http://0.0.0.0:5005 "POST /put_entry/key31 HTTP/1.1" 404 207
-2025-11-19 15:19:41,510 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 15:19:41,512 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 15:19:41,517 - DEBUG - http://0.0.0.0:5001 "POST /put_entry/key21 HTTP/1.1" 404 207
-2025-11-19 15:20:05,140 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:20:05,140 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:20:05,141 - DEBUG - Found 'credsStore' section
-2025-11-19 15:20:05,186 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:20:05,187 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:20:05,187 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:20:05,187 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:20:05,219 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 409 None
-2025-11-19 15:20:56,467 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:20:56,467 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:20:56,468 - DEBUG - Found 'credsStore' section
-2025-11-19 15:20:56,514 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:20:56,516 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:20:56,516 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:20:56,516 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:20:56,560 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:20:56,565 - DEBUG - http://localhost:None "GET /v1.51/containers/b5e0fb6a2a9dbe070a4168874b2c144a0348e51ccd8f578720b05bc093b4a584/json HTTP/1.1" 200 None
-2025-11-19 15:20:56,754 - DEBUG - http://localhost:None "POST /v1.51/containers/b5e0fb6a2a9dbe070a4168874b2c144a0348e51ccd8f578720b05bc093b4a584/start HTTP/1.1" 204 0
-2025-11-19 15:20:56,755 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:20:56,755 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:20:56,811 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:20:56,817 - DEBUG - http://localhost:None "GET /v1.51/containers/440f2ffd034c130f69fb6c310adbf729309c1403091f80996f197b46a08a01ac/json HTTP/1.1" 200 None
-2025-11-19 15:20:57,034 - DEBUG - http://localhost:None "POST /v1.51/containers/440f2ffd034c130f69fb6c310adbf729309c1403091f80996f197b46a08a01ac/start HTTP/1.1" 204 0
-2025-11-19 15:20:57,034 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:20:57,034 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:20:57,035 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:20:57,110 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:20:57,115 - DEBUG - http://localhost:None "GET /v1.51/containers/93d293136b16cf10c43becd334def9431438f855a86216dcc228cc2ac319c3dd/json HTTP/1.1" 200 None
-2025-11-19 15:20:57,256 - DEBUG - http://localhost:None "POST /v1.51/containers/93d293136b16cf10c43becd334def9431438f855a86216dcc228cc2ac319c3dd/start HTTP/1.1" 204 0
-2025-11-19 15:20:57,256 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:20:57,256 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:20:57,372 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:20:57,376 - DEBUG - http://localhost:None "GET /v1.51/containers/eaaf7b561974b6e4051fe4cb7139a7dc4928c903e595b1aecbc73d5eedf6f367/json HTTP/1.1" 200 None
-2025-11-19 15:20:57,500 - DEBUG - http://localhost:None "POST /v1.51/containers/eaaf7b561974b6e4051fe4cb7139a7dc4928c903e595b1aecbc73d5eedf6f367/start HTTP/1.1" 204 0
-2025-11-19 15:20:57,502 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:20:57,502 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:20:57,503 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:20:57,642 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:20:57,649 - DEBUG - http://localhost:None "GET /v1.51/containers/8744f3ba73468bd42a967fbab3013646ec9c317cd7e62d527aa9916f3503832a/json HTTP/1.1" 200 None
-2025-11-19 15:20:57,767 - DEBUG - http://localhost:None "POST /v1.51/containers/8744f3ba73468bd42a967fbab3013646ec9c317cd7e62d527aa9916f3503832a/start HTTP/1.1" 204 0
-2025-11-19 15:20:57,768 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:20:57,768 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:20:57,861 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:20:57,866 - DEBUG - http://localhost:None "GET /v1.51/containers/3ecc5c41c7a9e98aecd68e8a206556340a9615e34702f20208b70f742abd20dc/json HTTP/1.1" 200 None
-2025-11-19 15:20:57,959 - DEBUG - http://localhost:None "POST /v1.51/containers/3ecc5c41c7a9e98aecd68e8a206556340a9615e34702f20208b70f742abd20dc/start HTTP/1.1" 204 0
-2025-11-19 15:20:57,959 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:20:57,960 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:20:57,962 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:20:57,965 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:20:57,965 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:20:57,966 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:20:57,972 - DEBUG - http://0.0.0.0:5002 "POST /put_entry/key2 HTTP/1.1" 404 207
-2025-11-19 15:20:57,973 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:20:57,974 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:20:57,978 - DEBUG - http://0.0.0.0:5005 "POST /put_entry/key31 HTTP/1.1" 404 207
-2025-11-19 15:20:57,978 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 15:20:57,980 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 15:20:57,982 - DEBUG - http://0.0.0.0:5001 "POST /put_entry/key21 HTTP/1.1" 404 207
-2025-11-19 15:21:00,953 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:21:03,406 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:21:03,417 - DEBUG - http://0.0.0.0:5006 "GET /get_entry/key1 HTTP/1.1" 404 28
-2025-11-19 15:21:57,781 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:21:57,781 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:21:57,782 - DEBUG - Found 'credsStore' section
-2025-11-19 15:21:57,826 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:21:57,827 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:21:57,828 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:21:57,828 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:21:57,869 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:21:57,874 - DEBUG - http://localhost:None "GET /v1.51/containers/b4415b02aab79df3c5b64d03f151c44168e34a89023c76f6f98ef93e63b8da4c/json HTTP/1.1" 200 None
-2025-11-19 15:21:58,054 - DEBUG - http://localhost:None "POST /v1.51/containers/b4415b02aab79df3c5b64d03f151c44168e34a89023c76f6f98ef93e63b8da4c/start HTTP/1.1" 204 0
-2025-11-19 15:21:58,054 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:21:58,054 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:21:58,144 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:21:58,152 - DEBUG - http://localhost:None "GET /v1.51/containers/ed53d4c7d3c17f3c637a9208329ee71b570aaaf4fdaf55de9cc88e68fed73658/json HTTP/1.1" 200 None
-2025-11-19 15:21:58,327 - DEBUG - http://localhost:None "POST /v1.51/containers/ed53d4c7d3c17f3c637a9208329ee71b570aaaf4fdaf55de9cc88e68fed73658/start HTTP/1.1" 204 0
-2025-11-19 15:21:58,327 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:21:58,327 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:21:58,328 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:21:58,450 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:21:58,455 - DEBUG - http://localhost:None "GET /v1.51/containers/bb4a171f92739ae33220625fcde61a13f3afdac81b46ffe99123514e1d838884/json HTTP/1.1" 200 None
-2025-11-19 15:21:58,586 - DEBUG - http://localhost:None "POST /v1.51/containers/bb4a171f92739ae33220625fcde61a13f3afdac81b46ffe99123514e1d838884/start HTTP/1.1" 204 0
-2025-11-19 15:21:58,586 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:21:58,586 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:21:58,779 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:21:58,789 - DEBUG - http://localhost:None "GET /v1.51/containers/e933b1e5d4b4ef10b5471ab04798eef670e553265ae66ed5e144f1977dd9b08d/json HTTP/1.1" 200 None
-2025-11-19 15:21:58,960 - DEBUG - http://localhost:None "POST /v1.51/containers/e933b1e5d4b4ef10b5471ab04798eef670e553265ae66ed5e144f1977dd9b08d/start HTTP/1.1" 204 0
-2025-11-19 15:21:58,960 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:21:58,960 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:21:58,961 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:21:59,122 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:21:59,130 - DEBUG - http://localhost:None "GET /v1.51/containers/03b5f1223d7496bd3ded2a6b70d04edeb22d611e8d1d414d38368d8cf1aac920/json HTTP/1.1" 200 None
-2025-11-19 15:21:59,299 - DEBUG - http://localhost:None "POST /v1.51/containers/03b5f1223d7496bd3ded2a6b70d04edeb22d611e8d1d414d38368d8cf1aac920/start HTTP/1.1" 204 0
-2025-11-19 15:21:59,299 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:21:59,299 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:21:59,388 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:21:59,394 - DEBUG - http://localhost:None "GET /v1.51/containers/7584c2bd26b3906d97bc6ff22cb6478a54d9cea6e995bb8400a0e4137085a617/json HTTP/1.1" 200 None
-2025-11-19 15:21:59,515 - DEBUG - http://localhost:None "POST /v1.51/containers/7584c2bd26b3906d97bc6ff22cb6478a54d9cea6e995bb8400a0e4137085a617/start HTTP/1.1" 204 0
-2025-11-19 15:21:59,515 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:21:59,515 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:21:59,518 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:21:59,521 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:21:59,521 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:21:59,522 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:21:59,527 - DEBUG - http://0.0.0.0:5002 "POST /put_entry/key2 HTTP/1.1" 404 207
-2025-11-19 15:21:59,527 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:21:59,528 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:21:59,531 - DEBUG - http://0.0.0.0:5005 "POST /put_entry/key31 HTTP/1.1" 404 207
-2025-11-19 15:21:59,532 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 15:21:59,533 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 15:21:59,536 - DEBUG - http://0.0.0.0:5001 "POST /put_entry/key21 HTTP/1.1" 404 207
-2025-11-19 15:22:01,760 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:22:05,358 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:22:05,368 - DEBUG - http://0.0.0.0:5006 "GET /get_entry/key1 HTTP/1.1" 404 28
-2025-11-19 15:22:07,772 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:22:27,231 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:23:22,522 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:23:22,607 - DEBUG - http://0.0.0.0:5006 "GET /get_entry/key1 HTTP/1.1" 404 28
-2025-11-19 15:23:23,076 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:23:24,694 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: Expecting value: line 1 column 1 (char 0)
-2025-11-19 15:23:26,291 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:23:28,711 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:23:28,732 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 404 28
-2025-11-19 15:23:31,672 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:24:21,780 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:24:21,796 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 404 28
-2025-11-19 15:24:22,209 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:24:27,583 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:24:28,447 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: Expecting value: line 1 column 1 (char 0)
-2025-11-19 15:24:28,857 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-11-19 15:29:22,145 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:29:22,145 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:29:22,146 - DEBUG - Found 'credsStore' section
-2025-11-19 15:29:22,182 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:29:22,183 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:29:22,183 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:29:22,183 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:29:22,208 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 409 None
-2025-11-19 15:30:07,155 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:30:07,155 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:30:07,155 - DEBUG - Found 'credsStore' section
-2025-11-19 15:30:07,253 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:30:07,255 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:30:07,255 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:30:07,255 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:30:07,290 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:30:07,294 - DEBUG - http://localhost:None "GET /v1.51/containers/5b80f3deb3364681a21d026205a26da26a1a7b0a415d989128346aeee20a73cf/json HTTP/1.1" 200 None
-2025-11-19 15:30:07,429 - DEBUG - http://localhost:None "POST /v1.51/containers/5b80f3deb3364681a21d026205a26da26a1a7b0a415d989128346aeee20a73cf/start HTTP/1.1" 204 0
-2025-11-19 15:30:07,430 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:30:07,430 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:30:07,494 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:30:07,499 - DEBUG - http://localhost:None "GET /v1.51/containers/5951c8f8ef1c4a1b85ad786ff8207d277e6a7681125700718c595f88687ed9e6/json HTTP/1.1" 200 None
-2025-11-19 15:30:07,706 - DEBUG - http://localhost:None "POST /v1.51/containers/5951c8f8ef1c4a1b85ad786ff8207d277e6a7681125700718c595f88687ed9e6/start HTTP/1.1" 204 0
-2025-11-19 15:30:07,706 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:30:07,706 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:30:07,706 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:30:07,846 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:30:07,851 - DEBUG - http://localhost:None "GET /v1.51/containers/08fd7f168252dde6d4dd26d8d9ca916472ed08f93ac162dd6f3862a6020a6925/json HTTP/1.1" 200 None
-2025-11-19 15:30:08,021 - DEBUG - http://localhost:None "POST /v1.51/containers/08fd7f168252dde6d4dd26d8d9ca916472ed08f93ac162dd6f3862a6020a6925/start HTTP/1.1" 204 0
-2025-11-19 15:30:08,021 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:30:08,022 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:30:08,184 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:30:08,189 - DEBUG - http://localhost:None "GET /v1.51/containers/d40392b86596866f571e9648129647b65d469b8fefeaca2bc3edf2583fcaf1d9/json HTTP/1.1" 200 None
-2025-11-19 15:30:08,355 - DEBUG - http://localhost:None "POST /v1.51/containers/d40392b86596866f571e9648129647b65d469b8fefeaca2bc3edf2583fcaf1d9/start HTTP/1.1" 204 0
-2025-11-19 15:30:08,356 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:30:08,356 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:30:08,356 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:30:08,494 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:30:08,499 - DEBUG - http://localhost:None "GET /v1.51/containers/794d9fe5a5e6d0bfdce1cb63befd8d07bda442ffd7ffe9f114537ed3a88560ef/json HTTP/1.1" 200 None
-2025-11-19 15:30:08,627 - DEBUG - http://localhost:None "POST /v1.51/containers/794d9fe5a5e6d0bfdce1cb63befd8d07bda442ffd7ffe9f114537ed3a88560ef/start HTTP/1.1" 204 0
-2025-11-19 15:30:08,627 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:30:08,627 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:30:08,706 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:30:08,712 - DEBUG - http://localhost:None "GET /v1.51/containers/9ba55e56dcc7d59f94a394d3f4c55af4c20b28a5c4cc9d211f11dfd7a215a957/json HTTP/1.1" 200 None
-2025-11-19 15:30:08,802 - DEBUG - http://localhost:None "POST /v1.51/containers/9ba55e56dcc7d59f94a394d3f4c55af4c20b28a5c4cc9d211f11dfd7a215a957/start HTTP/1.1" 204 0
-2025-11-19 15:30:08,803 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:30:08,803 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:30:08,804 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:30:08,806 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:30:08,806 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:30:08,808 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:30:08,809 - ERROR - Error putting key: key2 into server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 15:30:08,809 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:30:08,809 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:30:08,810 - ERROR - Error putting key: key31 into server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 15:30:08,810 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 15:30:08,811 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 15:30:08,813 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 15:30:12,236 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:30:15,955 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:30:47,739 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:30:50,824 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:30:53,106 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:31:34,611 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 15:31:38,257 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:31:42,775 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:33:31,973 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:33:31,974 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:33:31,975 - DEBUG - Found 'credsStore' section
-2025-11-19 15:33:32,026 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:33:32,027 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:33:32,028 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:33:32,028 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:33:32,076 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:33:32,084 - DEBUG - http://localhost:None "GET /v1.51/containers/75d3230c73d5f6a751f00d2779ae3e48caf2b81cebb3484b67fe141f9ee6b375/json HTTP/1.1" 200 None
-2025-11-19 15:33:32,240 - DEBUG - http://localhost:None "POST /v1.51/containers/75d3230c73d5f6a751f00d2779ae3e48caf2b81cebb3484b67fe141f9ee6b375/start HTTP/1.1" 204 0
-2025-11-19 15:33:32,241 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:33:32,241 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:33:32,345 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:33:32,352 - DEBUG - http://localhost:None "GET /v1.51/containers/09a128a48468c425efed57c826f50331266abedfd3be7b7f90247220db5426c4/json HTTP/1.1" 200 None
-2025-11-19 15:33:32,570 - DEBUG - http://localhost:None "POST /v1.51/containers/09a128a48468c425efed57c826f50331266abedfd3be7b7f90247220db5426c4/start HTTP/1.1" 204 0
-2025-11-19 15:33:32,570 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:33:32,570 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:33:32,570 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:33:32,657 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:33:32,663 - DEBUG - http://localhost:None "GET /v1.51/containers/a3b2b1490f6a1e89637b2c5ffe7be722e71ae524e03f7f429890285ca040bd82/json HTTP/1.1" 200 None
-2025-11-19 15:33:32,814 - DEBUG - http://localhost:None "POST /v1.51/containers/a3b2b1490f6a1e89637b2c5ffe7be722e71ae524e03f7f429890285ca040bd82/start HTTP/1.1" 204 0
-2025-11-19 15:33:32,814 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:33:32,815 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:33:32,921 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:33:32,927 - DEBUG - http://localhost:None "GET /v1.51/containers/6584ca90391236a595e7987972d126ad621497a6959dac10b9ed043adccb7989/json HTTP/1.1" 200 None
-2025-11-19 15:33:33,056 - DEBUG - http://localhost:None "POST /v1.51/containers/6584ca90391236a595e7987972d126ad621497a6959dac10b9ed043adccb7989/start HTTP/1.1" 204 0
-2025-11-19 15:33:33,056 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:33:33,057 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:33:33,057 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:33:33,142 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:33:33,147 - DEBUG - http://localhost:None "GET /v1.51/containers/8168aa9a227ac92ac367f055fdb82f4815423e232d48ad18037bc17d99917d3d/json HTTP/1.1" 200 None
-2025-11-19 15:33:33,276 - DEBUG - http://localhost:None "POST /v1.51/containers/8168aa9a227ac92ac367f055fdb82f4815423e232d48ad18037bc17d99917d3d/start HTTP/1.1" 204 0
-2025-11-19 15:33:33,276 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:33:33,276 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:33:33,397 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:33:33,403 - DEBUG - http://localhost:None "GET /v1.51/containers/23219050ef975351c7f184ad2a5e3132d347e3f1c1165b832bf2aa14f13d9616/json HTTP/1.1" 200 None
-2025-11-19 15:33:33,515 - DEBUG - http://localhost:None "POST /v1.51/containers/23219050ef975351c7f184ad2a5e3132d347e3f1c1165b832bf2aa14f13d9616/start HTTP/1.1" 204 0
-2025-11-19 15:33:33,515 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:33:33,515 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:33:33,518 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:33:33,522 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:33:33,522 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:33:33,523 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:33:33,525 - ERROR - Error putting key: key2 into server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 15:33:33,525 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 15:33:33,526 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 15:33:33,528 - ERROR - Error putting key: key31 into server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 15:33:33,528 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 15:33:33,530 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 15:33:33,531 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 15:33:35,904 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:33:37,848 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:35:24,546 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:35:24,547 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:35:24,547 - DEBUG - Found 'credsStore' section
-2025-11-19 15:35:24,587 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:35:24,589 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:35:24,589 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:35:24,589 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:35:24,645 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:35:24,648 - DEBUG - http://localhost:None "GET /v1.51/containers/00ceb6cb1af08e3e82425d023270091b829b0fb898a28fb13c5b942c4ff040a3/json HTTP/1.1" 200 None
-2025-11-19 15:35:24,781 - DEBUG - http://localhost:None "POST /v1.51/containers/00ceb6cb1af08e3e82425d023270091b829b0fb898a28fb13c5b942c4ff040a3/start HTTP/1.1" 204 0
-2025-11-19 15:35:24,782 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:35:24,782 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:35:24,869 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:35:24,874 - DEBUG - http://localhost:None "GET /v1.51/containers/da134c5b408b6180664069b3ce8dbe14a6ae9e0a5fa008afb0abe820cf70ab75/json HTTP/1.1" 200 None
-2025-11-19 15:35:25,030 - DEBUG - http://localhost:None "POST /v1.51/containers/da134c5b408b6180664069b3ce8dbe14a6ae9e0a5fa008afb0abe820cf70ab75/start HTTP/1.1" 204 0
-2025-11-19 15:35:25,030 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:35:25,030 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:35:25,030 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:35:25,117 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:35:25,123 - DEBUG - http://localhost:None "GET /v1.51/containers/20f2ce49c4c7bd8d80b26e67a0c749df2d3a874d1e5c4f2b7131b7a5538f9a2a/json HTTP/1.1" 200 None
-2025-11-19 15:35:25,241 - DEBUG - http://localhost:None "POST /v1.51/containers/20f2ce49c4c7bd8d80b26e67a0c749df2d3a874d1e5c4f2b7131b7a5538f9a2a/start HTTP/1.1" 204 0
-2025-11-19 15:35:25,242 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:35:25,242 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:35:25,341 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:35:25,347 - DEBUG - http://localhost:None "GET /v1.51/containers/0d755034a81bfaaa68a516cd0d96962930201bd6a9ec6e9bcc0c4d2c6ca14c85/json HTTP/1.1" 200 None
-2025-11-19 15:35:25,455 - DEBUG - http://localhost:None "POST /v1.51/containers/0d755034a81bfaaa68a516cd0d96962930201bd6a9ec6e9bcc0c4d2c6ca14c85/start HTTP/1.1" 204 0
-2025-11-19 15:35:25,456 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:35:25,456 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:35:25,456 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:35:25,551 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:35:25,556 - DEBUG - http://localhost:None "GET /v1.51/containers/3e79051abc2ab450c2f22f02e5d6894c353782b3b7da5e1d30d9d6839415db81/json HTTP/1.1" 200 None
-2025-11-19 15:35:25,691 - DEBUG - http://localhost:None "POST /v1.51/containers/3e79051abc2ab450c2f22f02e5d6894c353782b3b7da5e1d30d9d6839415db81/start HTTP/1.1" 204 0
-2025-11-19 15:35:25,691 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:35:25,691 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:35:25,761 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:35:25,766 - DEBUG - http://localhost:None "GET /v1.51/containers/2b2c482a6fb5c92955425911c5bb26abdf92e3740e79c4b824845792f8bceb5e/json HTTP/1.1" 200 None
-2025-11-19 15:35:25,902 - DEBUG - http://localhost:None "POST /v1.51/containers/2b2c482a6fb5c92955425911c5bb26abdf92e3740e79c4b824845792f8bceb5e/start HTTP/1.1" 204 0
-2025-11-19 15:35:25,902 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:35:25,902 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:36:39,032 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:36:39,033 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:36:39,033 - DEBUG - Found 'credsStore' section
-2025-11-19 15:36:39,082 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:36:39,084 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:36:39,084 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:36:39,084 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:36:39,180 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:36:39,189 - DEBUG - http://localhost:None "GET /v1.51/containers/8484cf7d688070c5dc29294f18f2eb59a833b5f05bb92afe157364c9c8063f32/json HTTP/1.1" 200 None
-2025-11-19 15:36:39,383 - DEBUG - http://localhost:None "POST /v1.51/containers/8484cf7d688070c5dc29294f18f2eb59a833b5f05bb92afe157364c9c8063f32/start HTTP/1.1" 204 0
-2025-11-19 15:36:39,383 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:36:39,384 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:36:39,534 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:36:39,545 - DEBUG - http://localhost:None "GET /v1.51/containers/cf259f4661bcae5ef8899ac4eba8eec17c1e8daffce80da0ffffa5a20ea2e64f/json HTTP/1.1" 200 None
-2025-11-19 15:36:39,828 - DEBUG - http://localhost:None "POST /v1.51/containers/cf259f4661bcae5ef8899ac4eba8eec17c1e8daffce80da0ffffa5a20ea2e64f/start HTTP/1.1" 204 0
-2025-11-19 15:36:39,828 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:36:39,828 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:36:39,829 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:36:39,973 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:36:40,031 - DEBUG - http://localhost:None "GET /v1.51/containers/90b3088d1c50b8e9456f9d3a7d7a99d5809b8da07d2a709dad289ab53fa99d8f/json HTTP/1.1" 200 None
-2025-11-19 15:36:40,224 - DEBUG - http://localhost:None "POST /v1.51/containers/90b3088d1c50b8e9456f9d3a7d7a99d5809b8da07d2a709dad289ab53fa99d8f/start HTTP/1.1" 204 0
-2025-11-19 15:36:40,224 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:36:40,224 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:36:40,379 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:36:40,385 - DEBUG - http://localhost:None "GET /v1.51/containers/8d20401a7507e1b28cdd8b4789be230b66bf60fbfa800a3a9c0f271876ae0eb0/json HTTP/1.1" 200 None
-2025-11-19 15:36:40,654 - DEBUG - http://localhost:None "POST /v1.51/containers/8d20401a7507e1b28cdd8b4789be230b66bf60fbfa800a3a9c0f271876ae0eb0/start HTTP/1.1" 204 0
-2025-11-19 15:36:40,655 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:36:40,655 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:36:40,655 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:36:40,731 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:36:40,738 - DEBUG - http://localhost:None "GET /v1.51/containers/a80779eda9d0d1c332171e924abdc4f3314fd740b5b765c05550b55bc50e988a/json HTTP/1.1" 200 None
-2025-11-19 15:36:40,894 - DEBUG - http://localhost:None "POST /v1.51/containers/a80779eda9d0d1c332171e924abdc4f3314fd740b5b765c05550b55bc50e988a/start HTTP/1.1" 204 0
-2025-11-19 15:36:40,894 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:36:40,894 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:36:40,997 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:36:41,010 - DEBUG - http://localhost:None "GET /v1.51/containers/017db595d6e3ff440d99281ecae33fda8dde8d379f1823b2d3dc9cfb933150a4/json HTTP/1.1" 200 None
-2025-11-19 15:36:41,131 - DEBUG - http://localhost:None "POST /v1.51/containers/017db595d6e3ff440d99281ecae33fda8dde8d379f1823b2d3dc9cfb933150a4/start HTTP/1.1" 204 0
-2025-11-19 15:36:41,132 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:36:41,132 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:36:45,941 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:39:11,904 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:42:23,344 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:43:14,219 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 15:44:01,591 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 15:44:01,591 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 15:44:01,592 - DEBUG - Found 'credsStore' section
-2025-11-19 15:44:01,725 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 15:44:01,726 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 15:44:01,726 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 15:44:01,726 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 15:44:01,771 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 15:44:01,774 - DEBUG - http://localhost:None "GET /v1.51/containers/4a32685aa0155977cb8962bec713d9ad7c1c8f1d700e623edaee39817f53f136/json HTTP/1.1" 200 None
-2025-11-19 15:44:01,916 - DEBUG - http://localhost:None "POST /v1.51/containers/4a32685aa0155977cb8962bec713d9ad7c1c8f1d700e623edaee39817f53f136/start HTTP/1.1" 204 0
-2025-11-19 15:44:01,916 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 15:44:01,916 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 15:44:01,984 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 15:44:01,995 - DEBUG - http://localhost:None "GET /v1.51/containers/7b7a1700dde185204363e6dee6c481c1e988f0bd4bda1e35e121cef3e8a490b6/json HTTP/1.1" 200 None
-2025-11-19 15:44:02,192 - DEBUG - http://localhost:None "POST /v1.51/containers/7b7a1700dde185204363e6dee6c481c1e988f0bd4bda1e35e121cef3e8a490b6/start HTTP/1.1" 204 0
-2025-11-19 15:44:02,193 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 15:44:02,193 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 15:44:02,193 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 15:44:02,290 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 15:44:02,297 - DEBUG - http://localhost:None "GET /v1.51/containers/9d124a095507df71edf9c02f4511d2712f0f312f02783ae006c2c974dad7b8dd/json HTTP/1.1" 200 None
-2025-11-19 15:44:02,483 - DEBUG - http://localhost:None "POST /v1.51/containers/9d124a095507df71edf9c02f4511d2712f0f312f02783ae006c2c974dad7b8dd/start HTTP/1.1" 204 0
-2025-11-19 15:44:02,484 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 15:44:02,484 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 15:44:02,562 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 15:44:02,567 - DEBUG - http://localhost:None "GET /v1.51/containers/5d1930bb007f2ac939a9d8f86ac314f295139ef550d1eec02148db517d13e4c0/json HTTP/1.1" 200 None
-2025-11-19 15:44:02,718 - DEBUG - http://localhost:None "POST /v1.51/containers/5d1930bb007f2ac939a9d8f86ac314f295139ef550d1eec02148db517d13e4c0/start HTTP/1.1" 204 0
-2025-11-19 15:44:02,718 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 15:44:02,718 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 15:44:02,719 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 15:44:02,805 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 15:44:02,809 - DEBUG - http://localhost:None "GET /v1.51/containers/dc628de9f04863ee930ab56ba2980cd76817782c8ccc761e5ba8232bb049079e/json HTTP/1.1" 200 None
-2025-11-19 15:44:02,961 - DEBUG - http://localhost:None "POST /v1.51/containers/dc628de9f04863ee930ab56ba2980cd76817782c8ccc761e5ba8232bb049079e/start HTTP/1.1" 204 0
-2025-11-19 15:44:02,961 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 15:44:02,961 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 15:44:03,032 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 15:44:03,039 - DEBUG - http://localhost:None "GET /v1.51/containers/fa9cc11df11924fa7bef5096b794d5e1d74a76927c2aeb968ac3c80453ad30b8/json HTTP/1.1" 200 None
-2025-11-19 15:44:03,156 - DEBUG - http://localhost:None "POST /v1.51/containers/fa9cc11df11924fa7bef5096b794d5e1d74a76927c2aeb968ac3c80453ad30b8/start HTTP/1.1" 204 0
-2025-11-19 15:44:03,157 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 15:44:03,157 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 15:44:07,784 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 15:44:48,791 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 15:44:48,792 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 15:45:22,401 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:00:28,646 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:00:28,646 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:00:28,647 - DEBUG - Found 'credsStore' section
-2025-11-19 22:00:28,787 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:00:28,788 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:00:28,788 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:00:28,788 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:00:28,841 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:00:28,847 - DEBUG - http://localhost:None "GET /v1.51/containers/83db896b8982d3d36dc6e9eba40be158ede5223e3c12d04cd3255640c7ec0572/json HTTP/1.1" 200 None
-2025-11-19 22:00:28,947 - DEBUG - http://localhost:None "POST /v1.51/containers/83db896b8982d3d36dc6e9eba40be158ede5223e3c12d04cd3255640c7ec0572/start HTTP/1.1" 204 0
-2025-11-19 22:00:28,948 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:00:28,948 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:00:29,001 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:00:29,006 - DEBUG - http://localhost:None "GET /v1.51/containers/aaa6b63fccda7c4f3497e97d11f06419cb5a813494ee783023dbec5cbb9f19c3/json HTTP/1.1" 200 None
-2025-11-19 22:00:29,136 - DEBUG - http://localhost:None "POST /v1.51/containers/aaa6b63fccda7c4f3497e97d11f06419cb5a813494ee783023dbec5cbb9f19c3/start HTTP/1.1" 204 0
-2025-11-19 22:00:29,136 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:00:29,137 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:00:29,137 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:00:29,210 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:00:29,214 - DEBUG - http://localhost:None "GET /v1.51/containers/e842e2269224fa20b0d6f13880c9e08f39f63ec79739f7d655b3804aa51fca9f/json HTTP/1.1" 200 None
-2025-11-19 22:00:29,320 - DEBUG - http://localhost:None "POST /v1.51/containers/e842e2269224fa20b0d6f13880c9e08f39f63ec79739f7d655b3804aa51fca9f/start HTTP/1.1" 204 0
-2025-11-19 22:00:29,320 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:00:29,320 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:00:29,402 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:00:29,405 - DEBUG - http://localhost:None "GET /v1.51/containers/8259d939edd695abc7c6c2cadc37530b0e075274cae82f61521275839a49cfb3/json HTTP/1.1" 200 None
-2025-11-19 22:00:29,519 - DEBUG - http://localhost:None "POST /v1.51/containers/8259d939edd695abc7c6c2cadc37530b0e075274cae82f61521275839a49cfb3/start HTTP/1.1" 204 0
-2025-11-19 22:00:29,519 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:00:29,519 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:00:29,519 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:00:29,584 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:00:29,588 - DEBUG - http://localhost:None "GET /v1.51/containers/e6a6ff17279713a828d017f1587d6aef132afff3323c82814d8a435a1ef760b1/json HTTP/1.1" 200 None
-2025-11-19 22:00:29,677 - DEBUG - http://localhost:None "POST /v1.51/containers/e6a6ff17279713a828d017f1587d6aef132afff3323c82814d8a435a1ef760b1/start HTTP/1.1" 204 0
-2025-11-19 22:00:29,677 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:00:29,677 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:00:29,719 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:00:29,728 - DEBUG - http://localhost:None "GET /v1.51/containers/bbc04ce4e74e3ea640ae4e188ea6a0478662867817bf31f024fc419afbe2a2a8/json HTTP/1.1" 200 None
-2025-11-19 22:00:29,841 - DEBUG - http://localhost:None "POST /v1.51/containers/bbc04ce4e74e3ea640ae4e188ea6a0478662867817bf31f024fc419afbe2a2a8/start HTTP/1.1" 204 0
-2025-11-19 22:00:29,842 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:00:29,842 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:00:29,843 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:00:29,846 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:00:29,846 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:00:29,848 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:00:29,849 - ERROR - Error putting key: key2 into server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:00:29,849 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:00:29,850 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:00:29,852 - ERROR - Error putting key: key31 into server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:00:29,852 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:00:29,853 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:00:29,854 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:00:29,855 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:00:29,856 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:00:29,858 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:00:29,858 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:00:29,859 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:00:29,860 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:00:29,861 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:00:29,862 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:00:29,863 - ERROR - Error getting key: key31 from server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:00:29,863 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:00:29,864 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:00:29,866 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:01:03,978 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:01:03,978 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:01:03,978 - DEBUG - Found 'credsStore' section
-2025-11-19 22:01:03,996 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:01:03,996 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:01:03,996 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:01:03,996 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:01:04,029 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:01:04,033 - DEBUG - http://localhost:None "GET /v1.51/containers/cb54d1411484c71cc7d425611bd5f574e0520804f6c43f7ef9c42dfff0dde57e/json HTTP/1.1" 200 None
-2025-11-19 22:01:04,147 - DEBUG - http://localhost:None "POST /v1.51/containers/cb54d1411484c71cc7d425611bd5f574e0520804f6c43f7ef9c42dfff0dde57e/start HTTP/1.1" 204 0
-2025-11-19 22:01:04,148 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:01:04,148 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:01:04,258 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:01:04,265 - DEBUG - http://localhost:None "GET /v1.51/containers/5e544fe800024ab15c2ca562f1d35d4a49c1d63891ea95ad47270cc0a66e74a1/json HTTP/1.1" 200 None
-2025-11-19 22:01:04,373 - DEBUG - http://localhost:None "POST /v1.51/containers/5e544fe800024ab15c2ca562f1d35d4a49c1d63891ea95ad47270cc0a66e74a1/start HTTP/1.1" 204 0
-2025-11-19 22:01:04,373 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:01:04,373 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:01:04,373 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:01:04,468 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:01:04,475 - DEBUG - http://localhost:None "GET /v1.51/containers/3a60649ac6a1d7a6bf64485675617051325d7497126c0d643486bd1bd1c6fbc3/json HTTP/1.1" 200 None
-2025-11-19 22:01:04,592 - DEBUG - http://localhost:None "POST /v1.51/containers/3a60649ac6a1d7a6bf64485675617051325d7497126c0d643486bd1bd1c6fbc3/start HTTP/1.1" 204 0
-2025-11-19 22:01:04,593 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:01:04,593 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:01:04,652 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:01:04,666 - DEBUG - http://localhost:None "GET /v1.51/containers/6b43e2ac475f398d1d157ab60aa58ac6dca75688e63f478ea363d50a45e36f6f/json HTTP/1.1" 200 None
-2025-11-19 22:01:04,863 - DEBUG - http://localhost:None "POST /v1.51/containers/6b43e2ac475f398d1d157ab60aa58ac6dca75688e63f478ea363d50a45e36f6f/start HTTP/1.1" 204 0
-2025-11-19 22:01:04,863 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:01:04,863 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:01:04,863 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:01:04,976 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:01:04,981 - DEBUG - http://localhost:None "GET /v1.51/containers/13f49140b0b99200e8c97b3cc6119932f05ffc976b251e076be16e374db243b1/json HTTP/1.1" 200 None
-2025-11-19 22:01:05,105 - DEBUG - http://localhost:None "POST /v1.51/containers/13f49140b0b99200e8c97b3cc6119932f05ffc976b251e076be16e374db243b1/start HTTP/1.1" 204 0
-2025-11-19 22:01:05,105 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:01:05,106 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:01:05,178 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:01:05,182 - DEBUG - http://localhost:None "GET /v1.51/containers/5678acb551c348fa75c4e39d8b91246ad31d7df12ae2ad94a97a3c0ff848c17d/json HTTP/1.1" 200 None
-2025-11-19 22:01:05,321 - DEBUG - http://localhost:None "POST /v1.51/containers/5678acb551c348fa75c4e39d8b91246ad31d7df12ae2ad94a97a3c0ff848c17d/start HTTP/1.1" 204 0
-2025-11-19 22:01:05,321 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:01:05,322 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:01:05,323 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:01:05,324 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:01:05,324 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:01:05,326 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:01:05,327 - ERROR - Error putting key: key2 into server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:01:05,327 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:01:05,328 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:01:05,329 - ERROR - Error putting key: key31 into server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:01:05,329 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:01:05,330 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:01:05,331 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:01:05,331 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:01:05,332 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:01:05,333 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:01:05,333 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:01:05,334 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:01:05,335 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:01:05,336 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:01:05,337 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:01:05,338 - ERROR - Error getting key: key31 from server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:01:05,339 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:01:05,340 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:01:05,342 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:03:36,824 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:03:36,824 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:03:36,825 - DEBUG - Found 'credsStore' section
-2025-11-19 22:03:36,868 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:03:36,869 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:03:36,869 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:03:36,869 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:03:36,905 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:03:36,911 - DEBUG - http://localhost:None "GET /v1.51/containers/18ac69c457519cf624eb329b37c5144f4710bb75a35d07b1fefcebeaa6ec817e/json HTTP/1.1" 200 None
-2025-11-19 22:03:37,033 - DEBUG - http://localhost:None "POST /v1.51/containers/18ac69c457519cf624eb329b37c5144f4710bb75a35d07b1fefcebeaa6ec817e/start HTTP/1.1" 204 0
-2025-11-19 22:03:37,033 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:03:37,033 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:03:37,079 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:03:37,084 - DEBUG - http://localhost:None "GET /v1.51/containers/1a40ebcf5b664a974447efc04e5f490873b0217e735d89d82bd7efedb7cd0875/json HTTP/1.1" 200 None
-2025-11-19 22:03:37,205 - DEBUG - http://localhost:None "POST /v1.51/containers/1a40ebcf5b664a974447efc04e5f490873b0217e735d89d82bd7efedb7cd0875/start HTTP/1.1" 204 0
-2025-11-19 22:03:37,205 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:03:37,205 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:03:37,206 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:03:37,282 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:03:37,286 - DEBUG - http://localhost:None "GET /v1.51/containers/126a1e7dabbbf970391adbdee81c650b0477abe7b80eecc46e47957c43f6bb3b/json HTTP/1.1" 200 None
-2025-11-19 22:03:37,413 - DEBUG - http://localhost:None "POST /v1.51/containers/126a1e7dabbbf970391adbdee81c650b0477abe7b80eecc46e47957c43f6bb3b/start HTTP/1.1" 204 0
-2025-11-19 22:03:37,414 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:03:37,414 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:03:37,487 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:03:37,492 - DEBUG - http://localhost:None "GET /v1.51/containers/6759e01762d0e40c41a98a791a6973e334740de19e8920b9a6ecb0511084bb24/json HTTP/1.1" 200 None
-2025-11-19 22:03:37,596 - DEBUG - http://localhost:None "POST /v1.51/containers/6759e01762d0e40c41a98a791a6973e334740de19e8920b9a6ecb0511084bb24/start HTTP/1.1" 204 0
-2025-11-19 22:03:37,597 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:03:37,597 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:03:37,597 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:03:37,678 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:03:37,683 - DEBUG - http://localhost:None "GET /v1.51/containers/0a7b8f8f552ef2341ebeb9698c98cda6ab8f51d71b39b5969435b707271be0dd/json HTTP/1.1" 200 None
-2025-11-19 22:03:37,852 - DEBUG - http://localhost:None "POST /v1.51/containers/0a7b8f8f552ef2341ebeb9698c98cda6ab8f51d71b39b5969435b707271be0dd/start HTTP/1.1" 204 0
-2025-11-19 22:03:37,852 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:03:37,852 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:03:37,944 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:03:37,949 - DEBUG - http://localhost:None "GET /v1.51/containers/0172b73a0fdaf99352b00f910f7011568080d23c2321b302a506cf866ada6b9c/json HTTP/1.1" 200 None
-2025-11-19 22:03:38,069 - DEBUG - http://localhost:None "POST /v1.51/containers/0172b73a0fdaf99352b00f910f7011568080d23c2321b302a506cf866ada6b9c/start HTTP/1.1" 204 0
-2025-11-19 22:03:38,070 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:03:38,070 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:04:06,443 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:18:42,205 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:18:42,207 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:18:45,342 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:18:45,346 - ERROR - Error putting key: key2 into server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:18:45,346 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:18:46,197 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:18:46,198 - ERROR - Error putting key: key31 into server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:18:46,198 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:18:46,820 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:18:46,822 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:18:46,823 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:18:47,869 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:18:47,872 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:18:47,872 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:18:48,717 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:18:48,720 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: None
-2025-11-19 22:18:48,720 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:18:49,346 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:18:49,347 - ERROR - Error getting key: key31 from server with instance_no: 148653967710884202197061770581150063769. Error: None
-2025-11-19 22:18:49,348 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:18:49,967 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:18:49,968 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: None
-2025-11-19 22:26:08,101 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:26:08,101 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:26:08,102 - DEBUG - Found 'credsStore' section
-2025-11-19 22:26:08,126 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:26:08,126 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:26:08,126 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:26:08,126 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:26:08,166 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:26:08,170 - DEBUG - http://localhost:None "GET /v1.51/containers/0a79e41edc036930bbb18cb1b13bbdef40df6da20969e9d3f7f73db25276958f/json HTTP/1.1" 200 None
-2025-11-19 22:26:08,258 - DEBUG - http://localhost:None "POST /v1.51/containers/0a79e41edc036930bbb18cb1b13bbdef40df6da20969e9d3f7f73db25276958f/start HTTP/1.1" 204 0
-2025-11-19 22:26:08,258 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:26:08,258 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:26:08,327 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:26:08,331 - DEBUG - http://localhost:None "GET /v1.51/containers/dbd0dc8f5a756f93e6e4961a6748adbdf3e1acee9659dd9086adcff6280958e0/json HTTP/1.1" 200 None
-2025-11-19 22:26:08,471 - DEBUG - http://localhost:None "POST /v1.51/containers/dbd0dc8f5a756f93e6e4961a6748adbdf3e1acee9659dd9086adcff6280958e0/start HTTP/1.1" 204 0
-2025-11-19 22:26:08,471 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:26:08,471 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:26:08,471 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:26:08,529 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:26:08,536 - DEBUG - http://localhost:None "GET /v1.51/containers/180fabd1c839cc454319354eaf5b4a778d08e0d5badc3f103d42c0c2bed1b7aa/json HTTP/1.1" 200 None
-2025-11-19 22:26:08,660 - DEBUG - http://localhost:None "POST /v1.51/containers/180fabd1c839cc454319354eaf5b4a778d08e0d5badc3f103d42c0c2bed1b7aa/start HTTP/1.1" 204 0
-2025-11-19 22:26:08,660 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:26:08,660 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:26:08,732 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:26:08,737 - DEBUG - http://localhost:None "GET /v1.51/containers/42ec69c117b4bea4979b36462d74aace05fd226483d6cb57b86882863baa2ff7/json HTTP/1.1" 200 None
-2025-11-19 22:26:08,885 - DEBUG - http://localhost:None "POST /v1.51/containers/42ec69c117b4bea4979b36462d74aace05fd226483d6cb57b86882863baa2ff7/start HTTP/1.1" 204 0
-2025-11-19 22:26:08,885 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:26:08,885 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:26:08,885 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:26:09,002 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:26:09,006 - DEBUG - http://localhost:None "GET /v1.51/containers/c234c83a876b33af90ae2875238bf871a2ade76169e6e7544d78b3fceabfe507/json HTTP/1.1" 200 None
-2025-11-19 22:26:09,135 - DEBUG - http://localhost:None "POST /v1.51/containers/c234c83a876b33af90ae2875238bf871a2ade76169e6e7544d78b3fceabfe507/start HTTP/1.1" 204 0
-2025-11-19 22:26:09,136 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:26:09,136 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:26:09,212 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:26:09,221 - DEBUG - http://localhost:None "GET /v1.51/containers/5fe9ef58cb443c3c93d29488e2991f3da8821ec1a18cc7768337254672c81a1b/json HTTP/1.1" 200 None
-2025-11-19 22:26:09,333 - DEBUG - http://localhost:None "POST /v1.51/containers/5fe9ef58cb443c3c93d29488e2991f3da8821ec1a18cc7768337254672c81a1b/start HTTP/1.1" 204 0
-2025-11-19 22:26:09,333 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:26:09,333 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:26:09,335 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:26:09,336 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:26:09,336 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:26:09,337 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:26:09,341 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 22:26:09,341 - DEBUG - <Response [200]>
-2025-11-19 22:26:09,341 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:26:09,342 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:26:09,345 - DEBUG - http://0.0.0.0:5005 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:26:09,345 - DEBUG - <Response [200]>
-2025-11-19 22:26:09,345 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:26:09,346 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:26:09,348 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:26:09,350 - DEBUG - <Response [200]>
-2025-11-19 22:26:09,351 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:26:09,353 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:26:09,354 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:26:09,354 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:26:09,355 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:26:09,358 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:26:09,359 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:26:09,364 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:26:09,365 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:26:09,366 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:26:09,369 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:26:09,371 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:26:09,375 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:26:09,375 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:26:09,376 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:26:09,381 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:26:09,384 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:26:09,387 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:32:19,150 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:32:19,150 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:32:19,150 - DEBUG - Found 'credsStore' section
-2025-11-19 22:32:19,177 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:32:19,177 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:32:19,177 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:32:19,177 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:32:19,214 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:32:19,217 - DEBUG - http://localhost:None "GET /v1.51/containers/f6409df7e64f42556ed8514a0c37dd92ea58485085b9265c13d39bc4be455032/json HTTP/1.1" 200 None
-2025-11-19 22:32:19,316 - DEBUG - http://localhost:None "POST /v1.51/containers/f6409df7e64f42556ed8514a0c37dd92ea58485085b9265c13d39bc4be455032/start HTTP/1.1" 204 0
-2025-11-19 22:32:19,316 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:32:19,316 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:32:19,382 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:32:19,386 - DEBUG - http://localhost:None "GET /v1.51/containers/8d5e244f8fc104780f2e10596e0dc7687773d2862a872a7ea356c86d9097f632/json HTTP/1.1" 200 None
-2025-11-19 22:32:19,524 - DEBUG - http://localhost:None "POST /v1.51/containers/8d5e244f8fc104780f2e10596e0dc7687773d2862a872a7ea356c86d9097f632/start HTTP/1.1" 204 0
-2025-11-19 22:32:19,524 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:32:19,524 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:32:19,524 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:32:19,638 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:32:19,642 - DEBUG - http://localhost:None "GET /v1.51/containers/b834ec3e936c76af1e71742062fe6e9425d28ee98f16ca7b49a1a882e25b18e2/json HTTP/1.1" 200 None
-2025-11-19 22:32:19,761 - DEBUG - http://localhost:None "POST /v1.51/containers/b834ec3e936c76af1e71742062fe6e9425d28ee98f16ca7b49a1a882e25b18e2/start HTTP/1.1" 204 0
-2025-11-19 22:32:19,762 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:32:19,762 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:32:19,813 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:32:19,816 - DEBUG - http://localhost:None "GET /v1.51/containers/aba30d0563268b92daa884dcb0115cfef8293ab457dec3354c152071a314b340/json HTTP/1.1" 200 None
-2025-11-19 22:32:19,966 - DEBUG - http://localhost:None "POST /v1.51/containers/aba30d0563268b92daa884dcb0115cfef8293ab457dec3354c152071a314b340/start HTTP/1.1" 204 0
-2025-11-19 22:32:19,966 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:32:19,966 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:32:19,966 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:32:20,055 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:32:20,058 - DEBUG - http://localhost:None "GET /v1.51/containers/5af7c9c04c8d24c17be7280628d6f8056048a47b400d7ea1fc201d4268ddd314/json HTTP/1.1" 200 None
-2025-11-19 22:32:20,207 - DEBUG - http://localhost:None "POST /v1.51/containers/5af7c9c04c8d24c17be7280628d6f8056048a47b400d7ea1fc201d4268ddd314/start HTTP/1.1" 204 0
-2025-11-19 22:32:20,208 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:32:20,208 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:32:20,267 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:32:20,271 - DEBUG - http://localhost:None "GET /v1.51/containers/89469cdbe161c350881a634b6e88c15e6f58e3cb77433a4294a3ae34562fc9fb/json HTTP/1.1" 200 None
-2025-11-19 22:32:20,412 - DEBUG - http://localhost:None "POST /v1.51/containers/89469cdbe161c350881a634b6e88c15e6f58e3cb77433a4294a3ae34562fc9fb/start HTTP/1.1" 204 0
-2025-11-19 22:32:20,412 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:32:20,412 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:32:20,413 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:32:20,415 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:32:20,415 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:32:20,416 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:32:20,419 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 22:32:20,419 - DEBUG - <Response [200]>
-2025-11-19 22:32:20,419 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:32:20,420 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:32:20,421 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:32:20,422 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:32:20,423 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:32:20,426 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:32:20,427 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:32:20,430 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:32:20,431 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:32:20,432 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:32:20,435 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 404 29
-2025-11-19 22:32:20,437 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:32:20,439 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 404 29
-2025-11-19 22:32:20,440 - ERROR - Error getting key: key31 from server with instance_no: 148653967710884202197061770581150063769. Error: Expecting value: line 1 column 1 (char 0)
-2025-11-19 22:32:20,440 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:32:20,441 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:32:20,444 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 404 29
-2025-11-19 22:32:20,445 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:32:20,447 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 404 29
-2025-11-19 22:32:20,447 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: Expecting value: line 1 column 1 (char 0)
-2025-11-19 22:39:10,312 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:39:10,312 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:39:10,312 - DEBUG - Found 'credsStore' section
-2025-11-19 22:39:10,345 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:39:10,345 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:39:10,345 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:39:10,345 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:39:10,391 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:39:10,399 - DEBUG - http://localhost:None "GET /v1.51/containers/f8bfb3b64bc0e006fba6b577ad94dca8581fc6bbfc2798c25b26ad7e45015ddf/json HTTP/1.1" 200 None
-2025-11-19 22:39:10,517 - DEBUG - http://localhost:None "POST /v1.51/containers/f8bfb3b64bc0e006fba6b577ad94dca8581fc6bbfc2798c25b26ad7e45015ddf/start HTTP/1.1" 204 0
-2025-11-19 22:39:10,518 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:39:10,518 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:39:10,583 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:39:10,586 - DEBUG - http://localhost:None "GET /v1.51/containers/32b706ca64e0985c183027edb9c19a1c3e23dbc15da95fc26bd9c9def0ea3ba4/json HTTP/1.1" 200 None
-2025-11-19 22:39:10,721 - DEBUG - http://localhost:None "POST /v1.51/containers/32b706ca64e0985c183027edb9c19a1c3e23dbc15da95fc26bd9c9def0ea3ba4/start HTTP/1.1" 204 0
-2025-11-19 22:39:10,721 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:39:10,722 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:39:10,722 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:39:10,840 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:39:10,846 - DEBUG - http://localhost:None "GET /v1.51/containers/eca0d8e3e0d26d51c0f045f2c3faf2bf54bb6ea3c4670b92dfd4fe31e9451924/json HTTP/1.1" 200 None
-2025-11-19 22:39:10,992 - DEBUG - http://localhost:None "POST /v1.51/containers/eca0d8e3e0d26d51c0f045f2c3faf2bf54bb6ea3c4670b92dfd4fe31e9451924/start HTTP/1.1" 204 0
-2025-11-19 22:39:10,993 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:39:10,993 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:39:11,082 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:39:11,086 - DEBUG - http://localhost:None "GET /v1.51/containers/e7ff00763a57073bc8fb4ce418a8f7d36aa53b6e3bc888328d70c5d24cef7cf8/json HTTP/1.1" 200 None
-2025-11-19 22:39:11,201 - DEBUG - http://localhost:None "POST /v1.51/containers/e7ff00763a57073bc8fb4ce418a8f7d36aa53b6e3bc888328d70c5d24cef7cf8/start HTTP/1.1" 204 0
-2025-11-19 22:39:11,201 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:39:11,201 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:39:11,202 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:39:11,306 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:39:11,310 - DEBUG - http://localhost:None "GET /v1.51/containers/a492d6f3917599d6be5956811cb53cc9992704a6792d531fae5a687edcaed109/json HTTP/1.1" 200 None
-2025-11-19 22:39:11,436 - DEBUG - http://localhost:None "POST /v1.51/containers/a492d6f3917599d6be5956811cb53cc9992704a6792d531fae5a687edcaed109/start HTTP/1.1" 204 0
-2025-11-19 22:39:11,437 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:39:11,437 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:39:11,486 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:39:11,491 - DEBUG - http://localhost:None "GET /v1.51/containers/b459f21765d13d5eedd6357182c1307c77276115428e0a232ee068c84173f7d3/json HTTP/1.1" 200 None
-2025-11-19 22:39:11,601 - DEBUG - http://localhost:None "POST /v1.51/containers/b459f21765d13d5eedd6357182c1307c77276115428e0a232ee068c84173f7d3/start HTTP/1.1" 204 0
-2025-11-19 22:39:11,602 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:39:11,602 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:39:11,603 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:39:11,606 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 22:39:11,607 - DEBUG - <Response [200]>
-2025-11-19 22:39:11,607 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:39:11,608 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:39:11,612 - DEBUG - http://0.0.0.0:5005 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:39:11,613 - DEBUG - <Response [200]>
-2025-11-19 22:39:11,613 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:39:11,614 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:39:11,618 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:39:11,619 - DEBUG - <Response [200]>
-2025-11-19 22:39:11,619 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:39:11,620 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:39:11,622 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:39:11,622 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:39:11,623 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:39:11,624 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:39:11,624 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:39:11,631 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:39:11,634 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:39:11,636 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:39:11,638 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:39:11,639 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:39:11,640 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:39:11,644 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:39:11,646 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:39:11,650 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:39:11,651 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:39:11,653 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:39:11,657 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:39:11,660 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:39:11,662 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:43:00,539 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:43:00,540 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:43:00,540 - DEBUG - Found 'credsStore' section
-2025-11-19 22:43:00,581 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:43:00,582 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:43:00,582 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:43:00,582 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:43:00,629 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:43:00,633 - DEBUG - http://localhost:None "GET /v1.51/containers/597b618ffbdcbb6cdf1c57de6fd59464c5d29ffdbc9a09dea7bdb1191beebf73/json HTTP/1.1" 200 None
-2025-11-19 22:43:00,837 - DEBUG - http://localhost:None "POST /v1.51/containers/597b618ffbdcbb6cdf1c57de6fd59464c5d29ffdbc9a09dea7bdb1191beebf73/start HTTP/1.1" 204 0
-2025-11-19 22:43:00,837 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:43:00,837 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:43:00,970 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:43:00,976 - DEBUG - http://localhost:None "GET /v1.51/containers/93afc9f638b0da6d2398d30ab0434701c003b14fd407855bc124a420b4465687/json HTTP/1.1" 200 None
-2025-11-19 22:43:01,157 - DEBUG - http://localhost:None "POST /v1.51/containers/93afc9f638b0da6d2398d30ab0434701c003b14fd407855bc124a420b4465687/start HTTP/1.1" 204 0
-2025-11-19 22:43:01,157 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:43:01,157 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:43:01,157 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:43:01,271 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:43:01,274 - DEBUG - http://localhost:None "GET /v1.51/containers/c85d07fab2c88e19bbafbdc7923d1f78e62c5f91a2b1b724773ae4d5c11f5c53/json HTTP/1.1" 200 None
-2025-11-19 22:43:01,425 - DEBUG - http://localhost:None "POST /v1.51/containers/c85d07fab2c88e19bbafbdc7923d1f78e62c5f91a2b1b724773ae4d5c11f5c53/start HTTP/1.1" 204 0
-2025-11-19 22:43:01,425 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:43:01,426 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:43:01,582 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:43:01,588 - DEBUG - http://localhost:None "GET /v1.51/containers/96f904d15b842a739c19a20d2de5fe12d0833d0dc96657f9e5490c04aff12375/json HTTP/1.1" 200 None
-2025-11-19 22:43:01,801 - DEBUG - http://localhost:None "POST /v1.51/containers/96f904d15b842a739c19a20d2de5fe12d0833d0dc96657f9e5490c04aff12375/start HTTP/1.1" 204 0
-2025-11-19 22:43:01,802 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:43:01,802 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:43:01,802 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:43:01,914 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:43:01,925 - DEBUG - http://localhost:None "GET /v1.51/containers/030ea7a10ec4c7fc2cfbd7912ba4dd61a96fe3b1a6e0dadbecf5f7b11e3730f5/json HTTP/1.1" 200 None
-2025-11-19 22:43:02,046 - DEBUG - http://localhost:None "POST /v1.51/containers/030ea7a10ec4c7fc2cfbd7912ba4dd61a96fe3b1a6e0dadbecf5f7b11e3730f5/start HTTP/1.1" 204 0
-2025-11-19 22:43:02,047 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:43:02,047 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:43:02,146 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:43:02,151 - DEBUG - http://localhost:None "GET /v1.51/containers/13b4e16810dd7d43e1b31eaa5a6f6dc9e7b25dfcb783bab4336d7ab4fc3374c2/json HTTP/1.1" 200 None
-2025-11-19 22:43:02,275 - DEBUG - http://localhost:None "POST /v1.51/containers/13b4e16810dd7d43e1b31eaa5a6f6dc9e7b25dfcb783bab4336d7ab4fc3374c2/start HTTP/1.1" 204 0
-2025-11-19 22:43:02,275 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:43:02,275 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:43:02,277 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:43:02,281 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 22:43:02,281 - DEBUG - <Response [200]>
-2025-11-19 22:43:02,282 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:43:02,283 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:43:02,286 - DEBUG - http://0.0.0.0:5005 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:43:02,286 - DEBUG - <Response [200]>
-2025-11-19 22:43:02,286 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:43:02,287 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:43:02,291 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:43:02,291 - DEBUG - <Response [200]>
-2025-11-19 22:43:02,291 - DEBUG - Putting key: key10 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:43:02,292 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:43:02,295 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:43:02,295 - DEBUG - <Response [200]>
-2025-11-19 22:43:02,295 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:43:02,296 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:43:02,297 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:43:02,297 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:43:02,298 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:43:02,301 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:43:02,302 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:43:02,308 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:43:02,310 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:43:02,311 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:43:02,321 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:43:02,324 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:43:02,333 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:43:02,333 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:43:02,334 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:43:02,339 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:43:02,341 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:43:02,344 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:44:00,761 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 22:44:00,761 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 22:44:00,762 - DEBUG - Found 'credsStore' section
-2025-11-19 22:44:00,798 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 22:44:00,798 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 22:44:00,798 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 22:44:00,798 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 22:44:00,885 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 22:44:00,892 - DEBUG - http://localhost:None "GET /v1.51/containers/35ffe18ccbd8f8065f4ee3194db48b6d9c9431b65512068a13f43b74b31086c4/json HTTP/1.1" 200 None
-2025-11-19 22:44:01,029 - DEBUG - http://localhost:None "POST /v1.51/containers/35ffe18ccbd8f8065f4ee3194db48b6d9c9431b65512068a13f43b74b31086c4/start HTTP/1.1" 204 0
-2025-11-19 22:44:01,029 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 22:44:01,029 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 22:44:01,110 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 22:44:01,122 - DEBUG - http://localhost:None "GET /v1.51/containers/e1a682748e4cfac98b543507f9e81761ab659d598711c6e11b9c22dbd195a043/json HTTP/1.1" 200 None
-2025-11-19 22:44:01,329 - DEBUG - http://localhost:None "POST /v1.51/containers/e1a682748e4cfac98b543507f9e81761ab659d598711c6e11b9c22dbd195a043/start HTTP/1.1" 204 0
-2025-11-19 22:44:01,329 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 22:44:01,329 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 22:44:01,329 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 22:44:01,434 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 22:44:01,438 - DEBUG - http://localhost:None "GET /v1.51/containers/8322dc616c443a3f080dbb3b0d1eed6e42182d2a444c64466b03fbc55b55198e/json HTTP/1.1" 200 None
-2025-11-19 22:44:01,576 - DEBUG - http://localhost:None "POST /v1.51/containers/8322dc616c443a3f080dbb3b0d1eed6e42182d2a444c64466b03fbc55b55198e/start HTTP/1.1" 204 0
-2025-11-19 22:44:01,577 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 22:44:01,577 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 22:44:01,670 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 22:44:01,673 - DEBUG - http://localhost:None "GET /v1.51/containers/6b6daceb62d4ac0777321c13640dddc09d405cb940c3f116ed3ae3a8ac115b70/json HTTP/1.1" 200 None
-2025-11-19 22:44:01,805 - DEBUG - http://localhost:None "POST /v1.51/containers/6b6daceb62d4ac0777321c13640dddc09d405cb940c3f116ed3ae3a8ac115b70/start HTTP/1.1" 204 0
-2025-11-19 22:44:01,805 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 22:44:01,806 - DEBUG - Adding Server: server22 to the hash ring
-2025-11-19 22:44:01,806 - DEBUG - Adding virtual node with hash: 148653967710884202197061770581150063769 for server: server22-0
-2025-11-19 22:44:01,868 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-0 HTTP/1.1" 201 None
-2025-11-19 22:44:01,872 - DEBUG - http://localhost:None "GET /v1.51/containers/e8a64f29a5085097bd91a731621af0dfd60de8d21e83b51f61096bc7d1d16069/json HTTP/1.1" 200 None
-2025-11-19 22:44:02,022 - DEBUG - http://localhost:None "POST /v1.51/containers/e8a64f29a5085097bd91a731621af0dfd60de8d21e83b51f61096bc7d1d16069/start HTTP/1.1" 204 0
-2025-11-19 22:44:02,022 - INFO - Created container for CacheNode 148653967710884202197061770581150063769
-2025-11-19 22:44:02,022 - DEBUG - Adding virtual node with hash: 274250192430395933093506469418803046968 for server: server22-1
-2025-11-19 22:44:02,087 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server22-1 HTTP/1.1" 201 None
-2025-11-19 22:44:02,092 - DEBUG - http://localhost:None "GET /v1.51/containers/b64a9bebac590f8063d0102c0b2d86abbd8457bf2a7b90b92b64666e76957394/json HTTP/1.1" 200 None
-2025-11-19 22:44:02,216 - DEBUG - http://localhost:None "POST /v1.51/containers/b64a9bebac590f8063d0102c0b2d86abbd8457bf2a7b90b92b64666e76957394/start HTTP/1.1" 204 0
-2025-11-19 22:44:02,216 - INFO - Created container for CacheNode 274250192430395933093506469418803046968
-2025-11-19 22:44:02,216 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:44:02,217 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:44:02,221 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 22:44:02,222 - DEBUG - <Response [200]>
-2025-11-19 22:44:02,222 - DEBUG - Putting key: key31 into server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:44:02,223 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:44:02,226 - DEBUG - http://0.0.0.0:5005 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:44:02,226 - DEBUG - <Response [200]>
-2025-11-19 22:44:02,226 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:44:02,228 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:44:02,233 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 22:44:02,233 - DEBUG - <Response [200]>
-2025-11-19 22:44:02,233 - DEBUG - Putting key: key1 into server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:44:02,234 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:44:02,236 - ERROR - Error putting key: key1 into server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:44:02,236 - DEBUG - Getting key: key1 from server with instance_no: 274250192430395933093506469418803046968
-2025-11-19 22:44:02,237 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5006
-2025-11-19 22:44:02,238 - ERROR - Error getting key: key1 from server with instance_no: 274250192430395933093506469418803046968. Error: None
-2025-11-19 22:44:02,238 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 22:44:02,239 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:44:02,242 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:44:02,243 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 22:44:02,247 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 22:44:02,247 - DEBUG - Getting key: key31 from server with instance_no: 148653967710884202197061770581150063769
-2025-11-19 22:44:02,249 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:44:02,252 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:44:02,254 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5005
-2025-11-19 22:44:02,257 - DEBUG - http://0.0.0.0:5005 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 22:44:02,258 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 22:44:02,259 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:44:02,261 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 22:44:02,262 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 22:44:02,265 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 23:31:03,712 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 23:31:03,712 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 23:31:03,712 - DEBUG - Found 'credsStore' section
-2025-11-19 23:31:03,733 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 23:31:03,734 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 23:31:03,734 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 23:31:03,734 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 23:31:03,774 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 23:31:03,780 - DEBUG - http://localhost:None "GET /v1.51/containers/98e6f3641e5ddd3df8f0c484a4e657f806771cc987a89bd5d372435c072029bd/json HTTP/1.1" 200 None
-2025-11-19 23:31:03,930 - DEBUG - http://localhost:None "POST /v1.51/containers/98e6f3641e5ddd3df8f0c484a4e657f806771cc987a89bd5d372435c072029bd/start HTTP/1.1" 204 0
-2025-11-19 23:31:03,931 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 23:31:03,931 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 23:31:04,042 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 23:31:04,045 - DEBUG - http://localhost:None "GET /v1.51/containers/7b816b3447ef6601936a530b7025a37b46d4df504c8fcdcab76b1875fc49fe61/json HTTP/1.1" 200 None
-2025-11-19 23:31:04,239 - DEBUG - http://localhost:None "POST /v1.51/containers/7b816b3447ef6601936a530b7025a37b46d4df504c8fcdcab76b1875fc49fe61/start HTTP/1.1" 204 0
-2025-11-19 23:31:04,240 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 23:31:04,240 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 23:31:04,240 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 23:31:04,360 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 23:31:04,372 - DEBUG - http://localhost:None "GET /v1.51/containers/e9b64b92d240b0a8c14d6b7f5e3337e000a8d9df1276524c204df2e96550d54d/json HTTP/1.1" 200 None
-2025-11-19 23:31:04,540 - DEBUG - http://localhost:None "POST /v1.51/containers/e9b64b92d240b0a8c14d6b7f5e3337e000a8d9df1276524c204df2e96550d54d/start HTTP/1.1" 204 0
-2025-11-19 23:31:04,541 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 23:31:04,541 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 23:31:04,678 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 23:31:04,683 - DEBUG - http://localhost:None "GET /v1.51/containers/343fef3e73da10bdd9f18a55372c08f7d22e9ef47b8620d223f489d80a8568db/json HTTP/1.1" 200 None
-2025-11-19 23:31:04,817 - DEBUG - http://localhost:None "POST /v1.51/containers/343fef3e73da10bdd9f18a55372c08f7d22e9ef47b8620d223f489d80a8568db/start HTTP/1.1" 204 0
-2025-11-19 23:31:04,817 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 23:31:04,817 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,818 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:31:04,822 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:31:04,822 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
-2025-11-19 23:31:04,822 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,822 - ERROR - Error getting key: key1 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:31:04,822 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:31:04,822 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:31:04,822 - DEBUG - Getting key: key31 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:31:04,822 - ERROR - Error getting key: key31 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:31:04,822 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,822 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:31:04,822 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,823 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:31:04,826 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:31:04,827 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
-2025-11-19 23:31:04,827 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,827 - ERROR - Error getting key: key1 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:31:04,827 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:31:04,827 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:31:04,827 - DEBUG - Getting key: key31 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:31:04,827 - ERROR - Error getting key: key31 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:31:04,827 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:31:04,827 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:33:07,542 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 23:33:07,543 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 23:33:07,543 - DEBUG - Found 'credsStore' section
-2025-11-19 23:33:07,562 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 23:33:07,562 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 23:33:07,562 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 23:33:07,562 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 23:33:07,600 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 23:33:07,603 - DEBUG - http://localhost:None "GET /v1.51/containers/1ba50efe0b333f8fdbb763489b4b24f9b9df18523baf3277b3d77b86750b0e1a/json HTTP/1.1" 200 None
-2025-11-19 23:33:07,703 - DEBUG - http://localhost:None "POST /v1.51/containers/1ba50efe0b333f8fdbb763489b4b24f9b9df18523baf3277b3d77b86750b0e1a/start HTTP/1.1" 204 0
-2025-11-19 23:33:07,703 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 23:33:07,703 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 23:33:07,752 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 23:33:07,761 - DEBUG - http://localhost:None "GET /v1.51/containers/bb79e5ef00a106b88d149aafaa5cff71c48f74ebb094a0ca9fc7a5d4a250a671/json HTTP/1.1" 200 None
-2025-11-19 23:33:07,889 - DEBUG - http://localhost:None "POST /v1.51/containers/bb79e5ef00a106b88d149aafaa5cff71c48f74ebb094a0ca9fc7a5d4a250a671/start HTTP/1.1" 204 0
-2025-11-19 23:33:07,890 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 23:33:07,890 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 23:33:07,890 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 23:33:07,976 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 23:33:07,980 - DEBUG - http://localhost:None "GET /v1.51/containers/75653271f280b3161ae601bd00c3bb9cd218a5f6e165c5eaf7c803be5e7773f1/json HTTP/1.1" 200 None
-2025-11-19 23:33:08,116 - DEBUG - http://localhost:None "POST /v1.51/containers/75653271f280b3161ae601bd00c3bb9cd218a5f6e165c5eaf7c803be5e7773f1/start HTTP/1.1" 204 0
-2025-11-19 23:33:08,116 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 23:33:08,116 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 23:33:08,173 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 23:33:08,176 - DEBUG - http://localhost:None "GET /v1.51/containers/b0c30f1334efa319a4f2320d50f83780c720fe07b0d52d727d49b5727ac92b95/json HTTP/1.1" 200 None
-2025-11-19 23:33:08,304 - DEBUG - http://localhost:None "POST /v1.51/containers/b0c30f1334efa319a4f2320d50f83780c720fe07b0d52d727d49b5727ac92b95/start HTTP/1.1" 204 0
-2025-11-19 23:33:08,304 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 23:33:08,304 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:33:08,306 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:33:08,310 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:33:08,310 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
-2025-11-19 23:33:08,310 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,311 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:33:08,316 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:33:08,316 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key2 added/updated.
-2025-11-19 23:33:08,316 - DEBUG - Putting key: key3 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,317 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:33:08,320 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:33:08,320 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key3 added/updated.
-2025-11-19 23:33:08,320 - DEBUG - Putting key: key31 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,321 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:33:08,324 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 23:33:08,324 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key31 added/updated.
-2025-11-19 23:33:08,324 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:33:08,325 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:33:08,338 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 23:33:08,341 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key21 added/updated.
-2025-11-19 23:33:08,341 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,341 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:33:08,341 - DEBUG - Getting key: key31 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,341 - ERROR - Error getting key: key31 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:33:08,341 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:33:08,341 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:33:08,341 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:33:08,341 - ERROR - Error getting key: key2 from server with instance_no: 193012283215982576351218359333807155196. Error: name 'response' is not defined
-2025-11-19 23:33:08,341 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:33:08,341 - ERROR - Error getting key: key1 from server with instance_no: 53115666678760155327043932525405272078. Error: name 'response' is not defined
-2025-11-19 23:34:39,146 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
-2025-11-19 23:34:39,146 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
-2025-11-19 23:34:39,147 - DEBUG - Found 'credsStore' section
-2025-11-19 23:34:39,169 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
-2025-11-19 23:34:39,170 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
-2025-11-19 23:34:39,170 - DEBUG - Adding Server: server1 to the hash ring
-2025-11-19 23:34:39,170 - DEBUG - Adding virtual node with hash: 53115666678760155327043932525405272078 for server: server1-0
-2025-11-19 23:34:39,228 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-0 HTTP/1.1" 201 None
-2025-11-19 23:34:39,233 - DEBUG - http://localhost:None "GET /v1.51/containers/533dc4f70a41f30793330d609731162f7f888f6208a333fad45a66c089cb7518/json HTTP/1.1" 200 None
-2025-11-19 23:34:39,352 - DEBUG - http://localhost:None "POST /v1.51/containers/533dc4f70a41f30793330d609731162f7f888f6208a333fad45a66c089cb7518/start HTTP/1.1" 204 0
-2025-11-19 23:34:39,353 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
-2025-11-19 23:34:39,353 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
-2025-11-19 23:34:39,415 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1-1 HTTP/1.1" 201 None
-2025-11-19 23:34:39,421 - DEBUG - http://localhost:None "GET /v1.51/containers/d8d7dd31288fc115da996933eadbea2952e253d34850c06929107cd05abf5f25/json HTTP/1.1" 200 None
-2025-11-19 23:34:39,558 - DEBUG - http://localhost:None "POST /v1.51/containers/d8d7dd31288fc115da996933eadbea2952e253d34850c06929107cd05abf5f25/start HTTP/1.1" 204 0
-2025-11-19 23:34:39,558 - INFO - Created container for CacheNode 193012283215982576351218359333807155196
-2025-11-19 23:34:39,558 - DEBUG - Adding Server: server2 to the hash ring
-2025-11-19 23:34:39,559 - DEBUG - Adding virtual node with hash: 219245463641655862076417327675415595530 for server: server2-0
-2025-11-19 23:34:39,646 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-0 HTTP/1.1" 201 None
-2025-11-19 23:34:39,650 - DEBUG - http://localhost:None "GET /v1.51/containers/e857a6f9dfbc2128c24981e0df82b9bd2a16f8d543d0910b1837a47251946398/json HTTP/1.1" 200 None
-2025-11-19 23:34:39,790 - DEBUG - http://localhost:None "POST /v1.51/containers/e857a6f9dfbc2128c24981e0df82b9bd2a16f8d543d0910b1837a47251946398/start HTTP/1.1" 204 0
-2025-11-19 23:34:39,790 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
-2025-11-19 23:34:39,790 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
-2025-11-19 23:34:39,929 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2-1 HTTP/1.1" 201 None
-2025-11-19 23:34:39,932 - DEBUG - http://localhost:None "GET /v1.51/containers/5f76bef36d6c042cceb569eb5757a051642d85e050e1840905bc5e09b8823b32/json HTTP/1.1" 200 None
-2025-11-19 23:34:40,023 - DEBUG - http://localhost:None "POST /v1.51/containers/5f76bef36d6c042cceb569eb5757a051642d85e050e1840905bc5e09b8823b32/start HTTP/1.1" 204 0
-2025-11-19 23:34:40,023 - INFO - Created container for CacheNode 207254854758286617238972537152465528696
-2025-11-19 23:34:40,023 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:34:40,024 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:34:40,027 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:34:40,028 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
-2025-11-19 23:34:40,028 - DEBUG - Putting key: key2 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,029 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,031 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:34:40,032 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key2 added/updated.
-2025-11-19 23:34:40,032 - DEBUG - Putting key: key3 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,032 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,036 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 33
-2025-11-19 23:34:40,036 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key3 added/updated.
-2025-11-19 23:34:40,036 - DEBUG - Putting key: key31 into server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,037 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,039 - DEBUG - http://0.0.0.0:5002 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 23:34:40,039 - DEBUG - POST http://0.0.0.0:5002/put_entry status_code: 200, response: Entry for key key31 added/updated.
-2025-11-19 23:34:40,039 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:34:40,040 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:34:40,042 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
-2025-11-19 23:34:40,042 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key21 added/updated.
-2025-11-19 23:34:40,042 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,043 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,046 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 23:34:40,046 - DEBUG - Getting key: key31 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,047 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,049 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key31 HTTP/1.1" 200 34
-2025-11-19 23:34:40,050 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:34:40,050 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:34:40,054 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
-2025-11-19 23:34:40,054 - DEBUG - Getting key: key2 from server with instance_no: 193012283215982576351218359333807155196
-2025-11-19 23:34:40,055 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5002
-2025-11-19 23:34:40,059 - DEBUG - http://0.0.0.0:5002 "GET /get_entry/key2 HTTP/1.1" 200 32
-2025-11-19 23:34:40,060 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
-2025-11-19 23:34:40,061 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
-2025-11-19 23:34:40,064 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key1 HTTP/1.1" 200 33
+2025-11-20 18:19:19,894 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:19:19,894 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:19:19,894 - DEBUG - Found 'credsStore' section
+2025-11-20 18:19:53,561 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:19:53,561 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:19:53,561 - DEBUG - Found 'credsStore' section
+2025-11-20 18:19:53,600 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:19:53,600 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:19:53,600 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:19:53,601 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:19:53,725 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-20 18:19:53,728 - DEBUG - http://localhost:None "GET /v1.51/containers/d8dbdd182191e5611888498dee3895b23524117972d9c3ee3b143af233f356ce/json HTTP/1.1" 200 None
+2025-11-20 18:19:53,738 - DEBUG - http://localhost:None "POST /v1.51/containers/d8dbdd182191e5611888498dee3895b23524117972d9c3ee3b143af233f356ce/start HTTP/1.1" 500 126
+2025-11-20 18:21:00,009 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:21:00,009 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:21:00,009 - DEBUG - Found 'credsStore' section
+2025-11-20 18:21:00,042 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:21:00,042 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:21:00,042 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:21:00,042 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:21:00,070 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-20 18:21:34,864 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:21:34,864 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:21:34,864 - DEBUG - Found 'credsStore' section
+2025-11-20 18:21:34,897 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:21:34,897 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:21:34,897 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:21:34,897 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:21:34,944 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-20 18:21:34,953 - DEBUG - http://localhost:None "GET /v1.51/containers/809c09e75b9db13ecc86fd37d294adaf5b7b3dc0887191491216b54a6bf6d886/json HTTP/1.1" 200 None
+2025-11-20 18:21:34,961 - DEBUG - http://localhost:None "POST /v1.51/containers/809c09e75b9db13ecc86fd37d294adaf5b7b3dc0887191491216b54a6bf6d886/start HTTP/1.1" 500 126
+2025-11-20 18:22:44,191 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:22:44,191 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:22:44,191 - DEBUG - Found 'credsStore' section
+2025-11-20 18:22:44,230 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:22:44,230 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:22:44,230 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:22:44,230 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:22:44,291 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-20 18:22:44,295 - DEBUG - http://localhost:None "GET /v1.51/containers/58f37d0ab4de2d26079b248ead73a81252685db4dfb3c88fc06d17fdcce6ba03/json HTTP/1.1" 200 None
+2025-11-20 18:22:44,424 - DEBUG - http://localhost:None "POST /v1.51/containers/58f37d0ab4de2d26079b248ead73a81252685db4dfb3c88fc06d17fdcce6ba03/start HTTP/1.1" 204 0
+2025-11-20 18:22:44,425 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-20 18:22:44,425 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-20 18:22:44,425 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-20 18:22:44,425 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-20 18:22:44,486 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-20 18:22:44,490 - DEBUG - http://localhost:None "GET /v1.51/containers/14e0b641271e03b5a100d303a5bce5751b03f3198def056558dbe6ee5d3e6f1b/json HTTP/1.1" 200 None
+2025-11-20 18:22:44,645 - DEBUG - http://localhost:None "POST /v1.51/containers/14e0b641271e03b5a100d303a5bce5751b03f3198def056558dbe6ee5d3e6f1b/start HTTP/1.1" 204 0
+2025-11-20 18:22:44,645 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-20 18:22:44,646 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-20 18:22:44,646 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,647 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,649 - ERROR - Error putting key: key1 into server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,649 - DEBUG - Putting key: key2 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,651 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,653 - ERROR - Error putting key: key2 into server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,653 - DEBUG - Putting key: key3 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,654 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,655 - ERROR - Error putting key: key3 into server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,655 - DEBUG - Putting key: key31 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,656 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,657 - ERROR - Error putting key: key31 into server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,657 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,658 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,659 - ERROR - Error putting key: key21 into server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,660 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,661 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,663 - ERROR - Error getting key: key2 from server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,663 - DEBUG - Getting key: key31 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,664 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,669 - ERROR - Error getting key: key31 from server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,670 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,671 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,673 - ERROR - Error getting key: key21 from server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,673 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,674 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,677 - ERROR - Error getting key: key2 from server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:22:44,677 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:22:44,678 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:22:44,679 - ERROR - Error getting key: key1 from server with instance_no: 53115666678760155327043932525405272078. Error: None
+2025-11-20 18:23:38,485 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:23:38,486 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:23:38,486 - DEBUG - Found 'credsStore' section
+2025-11-20 18:23:38,518 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:23:38,518 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:23:38,518 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:23:38,518 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:23:38,583 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-20 18:23:38,589 - DEBUG - http://localhost:None "GET /v1.51/containers/16348ad69f93d9dcf6f64e12b979ce09d88435a57063289f085d620bf72cd7a6/json HTTP/1.1" 200 None
+2025-11-20 18:23:38,812 - DEBUG - http://localhost:None "POST /v1.51/containers/16348ad69f93d9dcf6f64e12b979ce09d88435a57063289f085d620bf72cd7a6/start HTTP/1.1" 204 0
+2025-11-20 18:23:38,813 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-20 18:23:38,813 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-20 18:23:38,813 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-20 18:23:38,813 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-20 18:23:38,919 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-20 18:23:38,927 - DEBUG - http://localhost:None "GET /v1.51/containers/f13e9d239e97446843110a5f8764d3f58c850c2a7a7e96dbc548f07605224636/json HTTP/1.1" 200 None
+2025-11-20 18:23:39,064 - DEBUG - http://localhost:None "POST /v1.51/containers/f13e9d239e97446843110a5f8764d3f58c850c2a7a7e96dbc548f07605224636/start HTTP/1.1" 204 0
+2025-11-20 18:23:39,064 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-20 18:23:39,064 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-20 18:23:39,064 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,065 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,068 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:23:39,069 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
+2025-11-20 18:23:39,069 - DEBUG - Putting key: key2 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,071 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,074 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:23:39,074 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key2 added/updated.
+2025-11-20 18:23:39,074 - DEBUG - Putting key: key3 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,075 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,078 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:23:39,078 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key3 added/updated.
+2025-11-20 18:23:39,078 - DEBUG - Putting key: key31 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,079 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,081 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
+2025-11-20 18:23:39,082 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key31 added/updated.
+2025-11-20 18:23:39,082 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,082 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,085 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
+2025-11-20 18:23:39,085 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key21 added/updated.
+2025-11-20 18:23:39,085 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,085 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,089 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key2 HTTP/1.1" 404 28
+2025-11-20 18:23:39,089 - ERROR - Error getting key: key2 from server with instance_no: 53115666678760155327043932525405272078. Error: Expecting value: line 1 column 1 (char 0)
+2025-11-20 18:23:39,089 - DEBUG - Getting key: key31 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,090 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,094 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key31 HTTP/1.1" 200 34
+2025-11-20 18:23:39,095 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,096 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,099 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
+2025-11-20 18:23:39,099 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,100 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,102 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key2 HTTP/1.1" 404 28
+2025-11-20 18:23:39,102 - ERROR - Error getting key: key2 from server with instance_no: 53115666678760155327043932525405272078. Error: Expecting value: line 1 column 1 (char 0)
+2025-11-20 18:23:39,103 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:23:39,104 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:23:39,107 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key1 HTTP/1.1" 404 28
+2025-11-20 18:23:39,107 - ERROR - Error getting key: key1 from server with instance_no: 53115666678760155327043932525405272078. Error: Expecting value: line 1 column 1 (char 0)
+2025-11-20 18:25:05,485 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-20 18:25:05,485 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-20 18:25:05,485 - DEBUG - Found 'credsStore' section
+2025-11-20 18:25:05,518 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-20 18:25:05,518 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-20 18:25:05,518 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-20 18:25:05,518 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-20 18:25:05,593 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-20 18:25:05,598 - DEBUG - http://localhost:None "GET /v1.51/containers/f9bb0453452fd5abc88e5d3ab97e534c279e37a1cc394518b3bfae63c19779e1/json HTTP/1.1" 200 None
+2025-11-20 18:25:05,706 - DEBUG - http://localhost:None "POST /v1.51/containers/f9bb0453452fd5abc88e5d3ab97e534c279e37a1cc394518b3bfae63c19779e1/start HTTP/1.1" 204 0
+2025-11-20 18:25:05,706 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-20 18:25:05,706 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-20 18:25:05,706 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-20 18:25:05,706 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-20 18:25:05,789 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-20 18:25:05,792 - DEBUG - http://localhost:None "GET /v1.51/containers/47de88697bf94a6491ebc0afde6c3883a2b7be474a508bdfa5ef36f48e1d1386/json HTTP/1.1" 200 None
+2025-11-20 18:25:05,925 - DEBUG - http://localhost:None "POST /v1.51/containers/47de88697bf94a6491ebc0afde6c3883a2b7be474a508bdfa5ef36f48e1d1386/start HTTP/1.1" 204 0
+2025-11-20 18:25:05,926 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-20 18:25:05,926 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-20 18:25:05,926 - DEBUG - Putting key: key1 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,928 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,931 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:25:05,932 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key1 added/updated.
+2025-11-20 18:25:05,932 - DEBUG - Putting key: key2 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,933 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,935 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:25:05,935 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key2 added/updated.
+2025-11-20 18:25:05,935 - DEBUG - Putting key: key3 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,936 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,938 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 33
+2025-11-20 18:25:05,938 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key3 added/updated.
+2025-11-20 18:25:05,938 - DEBUG - Putting key: key31 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,939 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,941 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
+2025-11-20 18:25:05,942 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key31 added/updated.
+2025-11-20 18:25:05,942 - DEBUG - Putting key: key21 into server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,943 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,945 - DEBUG - http://0.0.0.0:5001 "POST /put_entry HTTP/1.1" 200 34
+2025-11-20 18:25:05,945 - DEBUG - POST http://0.0.0.0:5001/put_entry status_code: 200, response: Entry for key key21 added/updated.
+2025-11-20 18:25:05,946 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,947 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,950 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key2 HTTP/1.1" 200 32
+2025-11-20 18:25:05,951 - DEBUG - Getting key: key31 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,951 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,962 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key31 HTTP/1.1" 200 34
+2025-11-20 18:25:05,965 - DEBUG - Getting key: key21 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,967 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,973 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key21 HTTP/1.1" 200 34
+2025-11-20 18:25:05,978 - DEBUG - Getting key: key2 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,980 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:05,988 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key2 HTTP/1.1" 200 32
+2025-11-20 18:25:05,988 - DEBUG - Getting key: key1 from server with instance_no: 53115666678760155327043932525405272078
+2025-11-20 18:25:05,991 - DEBUG - Starting new HTTP connection (1): 0.0.0.0:5001
+2025-11-20 18:25:06,014 - DEBUG - http://0.0.0.0:5001 "GET /get_entry/key1 HTTP/1.1" 200 33

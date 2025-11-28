@@ -1,0 +1,558 @@
+2025-11-27 00:40:49,866 - DEBUG - Using selector: KqueueSelector
+2025-11-27 00:40:49,867 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-11-27 00:40:49,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.0.0.209:6000
+2025-11-27 00:40:49,884 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 00:40:54,873 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:40:54.872362+00:00
+2025-11-27 00:40:59,876 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:40:59.876609+00:00
+2025-11-27 00:41:04,882 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:04.882386+00:00
+2025-11-27 00:41:09,889 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:09.889790+00:00
+2025-11-27 00:41:14,894 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:14.894610+00:00
+2025-11-27 00:41:19,901 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:19.901374+00:00
+2025-11-27 00:41:24,907 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:24.906954+00:00
+2025-11-27 00:41:29,911 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:29.911803+00:00
+2025-11-27 00:41:34,915 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:34.915164+00:00
+2025-11-27 00:41:39,918 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:39.918049+00:00
+2025-11-27 00:41:44,923 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:44.922923+00:00
+2025-11-27 00:41:49,928 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:49.928692+00:00
+2025-11-27 00:41:54,931 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:54.931059+00:00
+2025-11-27 00:41:59,949 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:41:59.941007+00:00
+2025-11-27 00:42:04,962 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:04.961488+00:00
+2025-11-27 00:42:09,969 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:09.969386+00:00
+2025-11-27 00:42:14,975 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:14.975218+00:00
+2025-11-27 00:42:19,979 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:19.979579+00:00
+2025-11-27 00:42:24,982 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:24.982269+00:00
+2025-11-27 00:42:29,987 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:29.987558+00:00
+2025-11-27 00:42:34,993 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:34.993369+00:00
+2025-11-27 00:42:40,000 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:39.999965+00:00
+2025-11-27 00:42:45,001 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:45.001202+00:00
+2025-11-27 00:42:50,005 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:50.004720+00:00
+2025-11-27 00:42:55,009 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:42:55.009489+00:00
+2025-11-27 00:43:00,011 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:00.011301+00:00
+2025-11-27 00:43:05,013 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:05.013844+00:00
+2025-11-27 00:43:10,016 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:10.016155+00:00
+2025-11-27 00:43:15,027 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:15.025285+00:00
+2025-11-27 00:43:20,033 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:20.033862+00:00
+2025-11-27 00:43:25,039 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:25.039426+00:00
+2025-11-27 00:43:30,044 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:30.044165+00:00
+2025-11-27 00:43:35,049 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:35.049439+00:00
+2025-11-27 00:43:40,052 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:40.052382+00:00
+2025-11-27 00:43:45,055 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:45.055299+00:00
+2025-11-27 00:43:50,057 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:50.057544+00:00
+2025-11-27 00:43:55,062 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:43:55.062947+00:00
+2025-11-27 00:44:00,063 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:00.063620+00:00
+2025-11-27 00:44:05,069 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:05.069086+00:00
+2025-11-27 00:44:10,071 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:10.071335+00:00
+2025-11-27 00:44:15,073 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:15.073204+00:00
+2025-11-27 00:44:20,076 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:20.076281+00:00
+2025-11-27 00:44:25,083 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:25.082962+00:00
+2025-11-27 00:44:30,087 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:30.087923+00:00
+2025-11-27 00:44:35,091 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:35.091067+00:00
+2025-11-27 00:44:40,097 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:40.096513+00:00
+2025-11-27 00:44:45,106 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:45.106614+00:00
+2025-11-27 00:44:50,112 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:50.112290+00:00
+2025-11-27 00:44:55,117 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:44:55.117351+00:00
+2025-11-27 00:45:00,119 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:00.119054+00:00
+2025-11-27 00:45:05,125 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:05.125343+00:00
+2025-11-27 00:45:05,593 - INFO - 127.0.0.1 - - [27/Nov/2025 00:45:05] "[33mPOST / HTTP/1.1[0m" 404 -
+2025-11-27 00:45:10,131 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:10.131612+00:00
+2025-11-27 00:45:15,133 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:15.132935+00:00
+2025-11-27 00:45:20,139 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:20.139428+00:00
+2025-11-27 00:45:25,141 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:25.140827+00:00
+2025-11-27 00:45:30,148 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:30.148047+00:00
+2025-11-27 00:45:35,153 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:35.153431+00:00
+2025-11-27 00:45:37,386 - ERROR - Exception on /acquire_lock [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/alokkarande/Projects/SystemDesign/distributed-locks/lock_test.py", line 31, in acquire_lock
+    lock = lock_manager.acquire_lock(key, client_id, expiry)
+  File "/Users/alokkarande/Projects/SystemDesign/distributed-locks/lock_object_manager.py", line 20, in acquire_lock
+    logger.isEnabledFor("Attempting to acquire lock with key: %s for client: %s", key, client_id)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.isEnabledFor() takes 2 positional arguments but 4 were given
+2025-11-27 00:45:37,398 - INFO - 127.0.0.1 - - [27/Nov/2025 00:45:37] "[35m[1mPOST /acquire_lock HTTP/1.1[0m" 500 -
+2025-11-27 00:45:40,158 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:40.158898+00:00
+2025-11-27 00:45:45,164 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:45.164358+00:00
+2025-11-27 00:45:50,168 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:50.168006+00:00
+2025-11-27 00:45:55,173 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:45:55.173542+00:00
+2025-11-27 00:46:00,176 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:00.176302+00:00
+2025-11-27 00:46:05,182 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:05.181905+00:00
+2025-11-27 00:46:10,184 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:10.184484+00:00
+2025-11-27 00:46:15,187 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:15.187228+00:00
+2025-11-27 00:46:20,193 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:20.193534+00:00
+2025-11-27 00:46:25,198 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:25.198881+00:00
+2025-11-27 00:46:30,204 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:30.204729+00:00
+2025-11-27 00:46:35,209 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:35.209018+00:00
+2025-11-27 00:46:40,215 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:40.215277+00:00
+2025-11-27 00:46:45,218 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:45.218894+00:00
+2025-11-27 00:46:50,224 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:50.224121+00:00
+2025-11-27 00:46:55,224 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:46:55.224898+00:00
+2025-11-27 00:47:00,231 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:00.231101+00:00
+2025-11-27 00:47:05,236 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:05.235277+00:00
+2025-11-27 00:47:10,238 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:10.238522+00:00
+2025-11-27 00:47:15,244 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:15.244264+00:00
+2025-11-27 00:47:20,246 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:20.246393+00:00
+2025-11-27 00:47:25,251 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:25.251863+00:00
+2025-11-27 00:47:30,258 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:30.258498+00:00
+2025-11-27 00:47:35,263 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:35.263882+00:00
+2025-11-27 00:47:40,270 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:40.270204+00:00
+2025-11-27 00:47:45,275 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:45.275508+00:00
+2025-11-27 00:47:50,278 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:50.278557+00:00
+2025-11-27 00:47:54,929 - DEBUG - Using selector: KqueueSelector
+2025-11-27 00:47:54,929 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-11-27 00:47:54,944 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.0.0.209:6000
+2025-11-27 00:47:54,944 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 00:47:59,937 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:47:59.934960+00:00
+2025-11-27 00:48:04,943 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:04.943505+00:00
+2025-11-27 00:48:06,670 - DEBUG - Attempting to acquire lock with key: some_key for client: C01
+2025-11-27 00:48:06,670 - DEBUG - Creating new lock with key: some_key for client: C01
+2025-11-27 00:48:06,670 - INFO - 127.0.0.1 - - [27/Nov/2025 00:48:06] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:48:09,949 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:09.949758+00:00
+2025-11-27 00:48:14,954 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:14.954844+00:00
+2025-11-27 00:48:14,955 - DEBUG - Cleaning up expired lock with key: some_key
+2025-11-27 00:48:14,955 - INFO - Deleting lock with key: some_key
+2025-11-27 00:48:19,956 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:19.956582+00:00
+2025-11-27 00:48:24,962 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:24.962017+00:00
+2025-11-27 00:48:29,965 - DEBUG - Attempting to acquire lock with key: some_key for client: C01
+2025-11-27 00:48:29,966 - DEBUG - Creating new lock with key: some_key for client: C01
+2025-11-27 00:48:29,966 - INFO - 127.0.0.1 - - [27/Nov/2025 00:48:29] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:48:29,967 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:29.967485+00:00
+2025-11-27 00:48:34,972 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:34.972744+00:00
+2025-11-27 00:48:39,975 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:39.974190+00:00
+2025-11-27 00:48:44,984 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:44.984819+00:00
+2025-11-27 00:48:49,985 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:49.985401+00:00
+2025-11-27 00:48:54,990 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:54.990814+00:00
+2025-11-27 00:48:59,994 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:48:59.994397+00:00
+2025-11-27 00:48:59,995 - DEBUG - Cleaning up expired lock with key: some_key
+2025-11-27 00:48:59,995 - INFO - Deleting lock with key: some_key
+2025-11-27 00:49:05,000 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:05.000300+00:00
+2025-11-27 00:49:10,005 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:10.005624+00:00
+2025-11-27 00:49:15,007 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:15.007712+00:00
+2025-11-27 00:49:20,011 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:20.011262+00:00
+2025-11-27 00:49:25,017 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:25.017034+00:00
+2025-11-27 00:49:30,021 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:30.021142+00:00
+2025-11-27 00:49:35,025 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:35.025735+00:00
+2025-11-27 00:49:40,031 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:40.030959+00:00
+2025-11-27 00:49:45,037 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:45.037522+00:00
+2025-11-27 00:49:50,041 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:50.041838+00:00
+2025-11-27 00:49:55,047 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:49:55.047136+00:00
+2025-11-27 00:50:00,051 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:00.051248+00:00
+2025-11-27 00:50:05,056 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:05.056401+00:00
+2025-11-27 00:50:10,058 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:10.058331+00:00
+2025-11-27 00:50:15,062 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:15.062213+00:00
+2025-11-27 00:50:20,069 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:20.069592+00:00
+2025-11-27 00:50:21,846 - DEBUG - Retrieving all locks.
+2025-11-27 00:50:21,847 - INFO - 127.0.0.1 - - [27/Nov/2025 00:50:21] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:50:25,075 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:25.075067+00:00
+2025-11-27 00:50:25,892 - DEBUG - Attempting to acquire lock with key: some_key for client: C01
+2025-11-27 00:50:25,892 - DEBUG - Creating new lock with key: some_key for client: C01
+2025-11-27 00:50:25,892 - INFO - 127.0.0.1 - - [27/Nov/2025 00:50:25] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:50:27,160 - DEBUG - Retrieving all locks.
+2025-11-27 00:50:27,161 - INFO - 127.0.0.1 - - [27/Nov/2025 00:50:27] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:50:30,080 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:30.080553+00:00
+2025-11-27 00:50:35,086 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:35.086205+00:00
+2025-11-27 00:50:40,089 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:40.089890+00:00
+2025-11-27 00:50:44,991 - DEBUG - Retrieving all locks.
+2025-11-27 00:50:44,991 - INFO - 127.0.0.1 - - [27/Nov/2025 00:50:44] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:50:45,095 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:45.095461+00:00
+2025-11-27 00:50:50,101 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:50.100899+00:00
+2025-11-27 00:50:55,105 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:50:55.105265+00:00
+2025-11-27 00:51:00,110 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:00.110872+00:00
+2025-11-27 00:51:00,111 - DEBUG - Cleaning up expired lock with key: some_key
+2025-11-27 00:51:00,111 - INFO - Deleting lock with key: some_key
+2025-11-27 00:51:01,499 - DEBUG - Retrieving all locks.
+2025-11-27 00:51:01,502 - INFO - 127.0.0.1 - - [27/Nov/2025 00:51:01] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:51:05,117 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:05.116804+00:00
+2025-11-27 00:51:10,119 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:10.119121+00:00
+2025-11-27 00:51:15,124 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:15.124757+00:00
+2025-11-27 00:51:20,130 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:20.130684+00:00
+2025-11-27 00:51:25,131 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:25.131829+00:00
+2025-11-27 00:51:30,137 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:30.137739+00:00
+2025-11-27 00:51:35,143 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:35.143575+00:00
+2025-11-27 00:51:40,149 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:40.149514+00:00
+2025-11-27 00:51:45,155 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:45.154976+00:00
+2025-11-27 00:51:50,159 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:50.159812+00:00
+2025-11-27 00:51:55,163 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:51:55.163202+00:00
+2025-11-27 00:52:00,164 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:00.164082+00:00
+2025-11-27 00:52:05,168 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:05.168373+00:00
+2025-11-27 00:52:10,174 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:10.174213+00:00
+2025-11-27 00:52:15,178 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:15.178728+00:00
+2025-11-27 00:52:20,183 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:20.183011+00:00
+2025-11-27 00:52:25,188 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:25.188705+00:00
+2025-11-27 00:52:30,192 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:30.191958+00:00
+2025-11-27 00:52:35,197 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:35.197538+00:00
+2025-11-27 00:52:40,203 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:40.203083+00:00
+2025-11-27 00:52:45,207 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:45.206924+00:00
+2025-11-27 00:52:50,213 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:50.212917+00:00
+2025-11-27 00:52:54,442 - DEBUG - Retrieving all locks.
+2025-11-27 00:52:54,443 - INFO - 127.0.0.1 - - [27/Nov/2025 00:52:54] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:52:55,220 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:52:55.220887+00:00
+2025-11-27 00:53:00,226 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:00.225982+00:00
+2025-11-27 00:53:05,229 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:05.229046+00:00
+2025-11-27 00:53:09,304 - DEBUG - Attempting to acquire lock with key: some_key for client: C01
+2025-11-27 00:53:09,305 - DEBUG - Creating new lock with key: some_key for client: C01
+2025-11-27 00:53:09,305 - INFO - 127.0.0.1 - - [27/Nov/2025 00:53:09] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:53:10,232 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:10.232639+00:00
+2025-11-27 00:53:13,356 - DEBUG - Attempting to acquire lock with key: some_key for client: C02
+2025-11-27 00:53:13,357 - ERROR - Lock with key: some_key is already held by another client: C01
+2025-11-27 00:53:13,357 - INFO - 127.0.0.1 - - [27/Nov/2025 00:53:13] "[31m[1mPOST /acquire_lock HTTP/1.1[0m" 409 -
+2025-11-27 00:53:15,238 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:15.238141+00:00
+2025-11-27 00:53:20,244 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:20.243826+00:00
+2025-11-27 00:53:23,815 - DEBUG - Attempting to acquire lock with key: some_key for client: C02
+2025-11-27 00:53:23,815 - ERROR - Lock with key: some_key is already held by another client: C01
+2025-11-27 00:53:23,816 - INFO - 127.0.0.1 - - [27/Nov/2025 00:53:23] "[31m[1mPOST /acquire_lock HTTP/1.1[0m" 409 -
+2025-11-27 00:53:25,249 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:25.249663+00:00
+2025-11-27 00:53:30,254 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:30.254481+00:00
+2025-11-27 00:53:35,256 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:35.256046+00:00
+2025-11-27 00:53:40,261 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:40.261599+00:00
+2025-11-27 00:53:40,262 - DEBUG - Cleaning up expired lock with key: some_key
+2025-11-27 00:53:40,262 - INFO - Deleting lock with key: some_key
+2025-11-27 00:53:45,263 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:45.262728+00:00
+2025-11-27 00:53:50,269 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:50.269827+00:00
+2025-11-27 00:53:55,271 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:53:55.271201+00:00
+2025-11-27 00:54:00,276 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:00.276544+00:00
+2025-11-27 00:54:05,281 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:05.281677+00:00
+2025-11-27 00:54:10,283 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:10.282952+00:00
+2025-11-27 00:54:15,288 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:15.288432+00:00
+2025-11-27 00:54:20,293 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:20.293640+00:00
+2025-11-27 00:54:25,294 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:25.294525+00:00
+2025-11-27 00:54:30,298 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:30.297820+00:00
+2025-11-27 00:54:35,301 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:35.301372+00:00
+2025-11-27 00:54:40,302 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:40.302800+00:00
+2025-11-27 00:54:45,304 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:45.304368+00:00
+2025-11-27 00:54:50,310 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:50.310301+00:00
+2025-11-27 00:54:55,315 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:54:55.315511+00:00
+2025-11-27 00:55:00,317 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:00.316974+00:00
+2025-11-27 00:55:05,322 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:05.322709+00:00
+2025-11-27 00:55:10,328 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:10.328252+00:00
+2025-11-27 00:55:15,333 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:15.333826+00:00
+2025-11-27 00:55:20,339 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:20.339108+00:00
+2025-11-27 00:55:25,342 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:25.342435+00:00
+2025-11-27 00:55:30,348 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:30.348272+00:00
+2025-11-27 00:55:35,353 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:35.353641+00:00
+2025-11-27 00:55:40,356 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:40.356090+00:00
+2025-11-27 00:55:45,359 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:45.359648+00:00
+2025-11-27 00:55:50,365 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:50.365074+00:00
+2025-11-27 00:55:55,371 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:55:55.371124+00:00
+2025-11-27 00:56:00,377 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:00.377722+00:00
+2025-11-27 00:56:05,383 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:05.382972+00:00
+2025-11-27 00:56:10,388 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:10.388613+00:00
+2025-11-27 00:56:15,392 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:15.392295+00:00
+2025-11-27 00:56:20,394 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:20.393852+00:00
+2025-11-27 00:56:25,400 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:25.399980+00:00
+2025-11-27 00:56:30,403 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:30.403611+00:00
+2025-11-27 00:56:35,409 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:35.409128+00:00
+2025-11-27 00:56:40,414 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:40.414539+00:00
+2025-11-27 00:56:45,420 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:45.419970+00:00
+2025-11-27 00:56:50,425 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:50.425120+00:00
+2025-11-27 00:56:55,430 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:56:55.430782+00:00
+2025-11-27 00:57:00,436 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:00.436430+00:00
+2025-11-27 00:57:05,439 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:05.439099+00:00
+2025-11-27 00:57:10,443 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:10.443171+00:00
+2025-11-27 00:57:15,445 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:15.445450+00:00
+2025-11-27 00:57:20,451 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:20.450733+00:00
+2025-11-27 00:57:25,458 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:25.458083+00:00
+2025-11-27 00:57:30,459 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:30.459404+00:00
+2025-11-27 00:57:35,465 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:35.465173+00:00
+2025-11-27 00:57:40,469 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:40.469071+00:00
+2025-11-27 00:57:45,470 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:45.470070+00:00
+2025-11-27 00:57:50,475 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:50.475516+00:00
+2025-11-27 00:57:55,480 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:57:55.480446+00:00
+2025-11-27 00:57:58,635 - DEBUG - Attempting to acquire lock with key: some_key for client: C02
+2025-11-27 00:57:58,635 - DEBUG - Creating new lock with key: some_key for client: C02
+2025-11-27 00:57:58,636 - INFO - 127.0.0.1 - - [27/Nov/2025 00:57:58] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:58:00,484 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:00.484022+00:00
+2025-11-27 00:58:04,869 - DEBUG - Attempting to acquire lock with key: some_key for client: C01
+2025-11-27 00:58:04,869 - ERROR - Lock with key: some_key is already held by another client: C02
+2025-11-27 00:58:04,870 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:04] "[31m[1mPOST /acquire_lock HTTP/1.1[0m" 409 -
+2025-11-27 00:58:05,485 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:05.484931+00:00
+2025-11-27 00:58:10,488 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:10.488544+00:00
+2025-11-27 00:58:15,493 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:15.493766+00:00
+2025-11-27 00:58:17,791 - DEBUG - Attempting to acquire lock with key: some_key_02 for client: C02
+2025-11-27 00:58:17,791 - DEBUG - Creating new lock with key: some_key_02 for client: C02
+2025-11-27 00:58:17,791 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:17] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:58:20,499 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:20.499509+00:00
+2025-11-27 00:58:20,674 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:20,675 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:20] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:25,505 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:25.505237+00:00
+2025-11-27 00:58:30,509 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:30.509477+00:00
+2025-11-27 00:58:30,509 - DEBUG - Cleaning up expired lock with key: some_key
+2025-11-27 00:58:30,509 - INFO - Deleting lock with key: some_key
+2025-11-27 00:58:33,857 - DEBUG - Attempting to acquire lock with key: some_key_03 for client: C03
+2025-11-27 00:58:33,857 - DEBUG - Creating new lock with key: some_key_03 for client: C03
+2025-11-27 00:58:33,858 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:33] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 00:58:35,155 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:35,156 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:35] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:35,515 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:35.515011+00:00
+2025-11-27 00:58:40,516 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:40.516154+00:00
+2025-11-27 00:58:40,586 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:40,587 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:40] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:41,792 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:41,792 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:41] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:42,668 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:42,669 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:42] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:43,566 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:43,567 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:43] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:44,713 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:44,714 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:44] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:45,517 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:45.517095+00:00
+2025-11-27 00:58:45,983 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:45,984 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:45] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:46,796 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:46,797 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:46] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:47,862 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:47,862 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:47] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:48,928 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:48,929 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:48] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:50,522 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:50.522780+00:00
+2025-11-27 00:58:50,523 - DEBUG - Cleaning up expired lock with key: some_key_02
+2025-11-27 00:58:50,523 - INFO - Deleting lock with key: some_key_02
+2025-11-27 00:58:51,982 - DEBUG - Retrieving all locks.
+2025-11-27 00:58:51,983 - INFO - 127.0.0.1 - - [27/Nov/2025 00:58:51] "GET /all_locks HTTP/1.1" 200 -
+2025-11-27 00:58:55,528 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:58:55.527885+00:00
+2025-11-27 00:59:00,533 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:00.533882+00:00
+2025-11-27 00:59:05,539 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:05.539448+00:00
+2025-11-27 00:59:05,540 - DEBUG - Cleaning up expired lock with key: some_key_03
+2025-11-27 00:59:05,540 - INFO - Deleting lock with key: some_key_03
+2025-11-27 00:59:10,545 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:10.545185+00:00
+2025-11-27 00:59:15,547 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:15.547478+00:00
+2025-11-27 00:59:20,553 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:20.553195+00:00
+2025-11-27 00:59:25,557 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:25.556989+00:00
+2025-11-27 00:59:30,562 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:30.562345+00:00
+2025-11-27 00:59:35,566 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:35.566292+00:00
+2025-11-27 00:59:40,569 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:40.569919+00:00
+2025-11-27 00:59:45,572 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:45.571931+00:00
+2025-11-27 00:59:50,572 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:50.572871+00:00
+2025-11-27 00:59:55,577 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 08:59:55.577130+00:00
+2025-11-27 01:00:00,582 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:00.582626+00:00
+2025-11-27 01:00:05,588 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:05.588283+00:00
+2025-11-27 01:00:10,594 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:10.594099+00:00
+2025-11-27 01:00:15,600 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:15.600029+00:00
+2025-11-27 01:00:20,605 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:20.605553+00:00
+2025-11-27 01:00:25,611 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:25.611224+00:00
+2025-11-27 01:00:30,616 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:30.616574+00:00
+2025-11-27 01:00:35,622 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:35.622561+00:00
+2025-11-27 01:00:40,626 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:40.626022+00:00
+2025-11-27 01:00:45,634 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:45.634820+00:00
+2025-11-27 01:00:50,645 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:50.644958+00:00
+2025-11-27 01:00:55,654 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:00:55.654029+00:00
+2025-11-27 01:01:00,659 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:00.659138+00:00
+2025-11-27 01:01:05,665 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:05.665093+00:00
+2025-11-27 01:01:10,672 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:10.672102+00:00
+2025-11-27 01:01:15,678 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:15.678695+00:00
+2025-11-27 01:01:20,681 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:20.680932+00:00
+2025-11-27 01:01:25,687 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:25.686960+00:00
+2025-11-27 01:01:30,689 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:30.689289+00:00
+2025-11-27 01:01:35,693 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:35.693619+00:00
+2025-11-27 01:01:40,699 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:40.699290+00:00
+2025-11-27 01:01:45,705 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:45.705321+00:00
+2025-11-27 01:01:50,706 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:50.706222+00:00
+2025-11-27 01:01:55,708 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:01:55.708075+00:00
+2025-11-27 01:02:00,712 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:00.711713+00:00
+2025-11-27 01:02:05,723 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:05.723406+00:00
+2025-11-27 01:02:10,729 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:10.728942+00:00
+2025-11-27 01:02:15,733 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:15.733295+00:00
+2025-11-27 01:02:20,734 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:20.734188+00:00
+2025-11-27 01:02:25,739 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:25.739805+00:00
+2025-11-27 01:02:30,745 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:30.745478+00:00
+2025-11-27 01:02:35,751 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:35.751014+00:00
+2025-11-27 01:02:40,755 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:40.755080+00:00
+2025-11-27 01:02:45,760 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:45.760672+00:00
+2025-11-27 01:02:50,766 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:50.766481+00:00
+2025-11-27 01:02:55,772 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:02:55.772009+00:00
+2025-11-27 01:03:00,778 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:00.778093+00:00
+2025-11-27 01:03:05,783 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:05.783673+00:00
+2025-11-27 01:03:10,788 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:10.788118+00:00
+2025-11-27 01:03:15,793 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:15.793685+00:00
+2025-11-27 01:03:20,799 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:20.799563+00:00
+2025-11-27 01:03:25,802 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:25.802441+00:00
+2025-11-27 01:03:30,808 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:30.807995+00:00
+2025-11-27 01:03:35,812 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:35.812879+00:00
+2025-11-27 01:03:40,818 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:40.818546+00:00
+2025-11-27 01:03:45,821 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:45.821482+00:00
+2025-11-27 01:03:50,825 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:50.825665+00:00
+2025-11-27 01:03:55,831 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:03:55.831259+00:00
+2025-11-27 01:04:00,837 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:00.836948+00:00
+2025-11-27 01:04:05,842 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:05.842646+00:00
+2025-11-27 01:04:10,848 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:10.848239+00:00
+2025-11-27 01:04:15,849 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:15.849538+00:00
+2025-11-27 01:04:20,855 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:20.855233+00:00
+2025-11-27 01:04:25,858 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:25.858277+00:00
+2025-11-27 01:04:30,862 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:30.861926+00:00
+2025-11-27 01:04:35,867 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:35.867640+00:00
+2025-11-27 01:04:40,873 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:40.873302+00:00
+2025-11-27 01:04:45,876 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:45.876629+00:00
+2025-11-27 01:04:50,880 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:50.880768+00:00
+2025-11-27 01:04:55,884 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:04:55.884583+00:00
+2025-11-27 01:05:00,885 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:00.885618+00:00
+2025-11-27 01:05:05,889 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:05.889276+00:00
+2025-11-27 01:05:10,894 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:10.894855+00:00
+2025-11-27 01:05:15,900 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:15.900548+00:00
+2025-11-27 01:05:20,904 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:20.904505+00:00
+2025-11-27 01:05:25,910 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:25.910187+00:00
+2025-11-27 01:05:30,913 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:30.912550+00:00
+2025-11-27 01:05:35,920 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:35.920261+00:00
+2025-11-27 01:05:40,924 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:40.924846+00:00
+2025-11-27 01:05:45,927 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:45.927531+00:00
+2025-11-27 01:05:50,930 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:50.930078+00:00
+2025-11-27 01:05:55,935 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:05:55.934994+00:00
+2025-11-27 01:06:00,940 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:00.940322+00:00
+2025-11-27 01:06:05,947 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:05.946968+00:00
+2025-11-27 01:06:10,954 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:10.954527+00:00
+2025-11-27 01:06:15,960 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:15.960218+00:00
+2025-11-27 01:06:20,965 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:20.965017+00:00
+2025-11-27 01:06:25,972 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:25.972357+00:00
+2025-11-27 01:06:30,977 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:30.976954+00:00
+2025-11-27 01:06:35,978 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:35.977910+00:00
+2025-11-27 01:06:40,979 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:40.979701+00:00
+2025-11-27 01:06:45,982 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:45.982676+00:00
+2025-11-27 01:06:50,986 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:50.986827+00:00
+2025-11-27 01:06:55,990 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:06:55.990706+00:00
+2025-11-27 01:07:00,996 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:00.996467+00:00
+2025-11-27 01:07:06,000 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:05.999338+00:00
+2025-11-27 01:07:11,003 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:11.003219+00:00
+2025-11-27 01:07:16,009 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:16.009066+00:00
+2025-11-27 01:07:21,011 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:21.011043+00:00
+2025-11-27 01:07:26,016 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:26.016465+00:00
+2025-11-27 01:07:31,020 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:31.020826+00:00
+2025-11-27 01:07:36,024 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:36.024778+00:00
+2025-11-27 01:07:41,030 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:41.030177+00:00
+2025-11-27 01:07:46,037 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:46.036670+00:00
+2025-11-27 01:07:51,043 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:51.043222+00:00
+2025-11-27 01:07:56,044 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:07:56.044215+00:00
+2025-11-27 01:08:01,049 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:08:01.049838+00:00
+2025-11-27 01:08:06,055 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:08:06.055498+00:00
+2025-11-27 01:08:11,059 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:08:11.059010+00:00
+2025-11-27 01:08:16,060 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:08:16.060447+00:00
+2025-11-27 01:17:35,803 - DEBUG - Using selector: KqueueSelector
+2025-11-27 01:17:35,803 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-11-27 01:17:35,816 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.0.0.209:6000
+2025-11-27 01:17:35,816 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 01:17:40,813 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:17:40.809741+00:00
+2025-11-27 01:17:42,745 - DEBUG - Attempting to acquire lock with key: some_key_03 for client: C03
+2025-11-27 01:17:42,746 - DEBUG - Creating new lock with key: some_key_03 for client: C03
+2025-11-27 01:17:42,747 - INFO - 127.0.0.1 - - [27/Nov/2025 01:17:42] "POST /acquire_lock HTTP/1.1" 200 -
+2025-11-27 01:17:45,821 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:17:45.821002+00:00
+2025-11-27 01:17:48,602 - DEBUG - Attempting to acquire lock with key: some_key_03 for client: C02
+2025-11-27 01:17:48,603 - ERROR - Exception on /acquire_lock [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/alokkarande/Projects/SystemDesign/distributed-locks/distrubuted_lock_api.py", line 31, in acquire_lock
+    lock = lock_manager.acquire_lock(key, client_id, expiry)
+  File "/Users/alokkarande/Projects/SystemDesign/distributed-locks/lock_object_manager.py", line 40, in acquire_lock
+    expiry =  timedelta(seconds=self.expiry) - datetime.now(timezone.utc) - self.start_time
+                                ^^^^^^^^^^^
+AttributeError: 'LockObjectManager' object has no attribute 'expiry'
+2025-11-27 01:17:48,613 - INFO - 127.0.0.1 - - [27/Nov/2025 01:17:48] "[35m[1mPOST /acquire_lock HTTP/1.1[0m" 500 -
+2025-11-27 01:17:50,822 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:17:50.822315+00:00
+2025-11-27 01:17:55,828 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:17:55.828416+00:00
+2025-11-27 01:18:00,834 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:00.834341+00:00
+2025-11-27 01:18:05,840 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:05.839966+00:00
+2025-11-27 01:18:10,844 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:10.844349+00:00
+2025-11-27 01:18:15,849 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:15.849641+00:00
+2025-11-27 01:18:15,850 - DEBUG - Cleaning up expired lock with key: some_key_03
+2025-11-27 01:18:15,850 - INFO - Deleting lock with key: some_key_03
+2025-11-27 01:18:20,855 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:20.855374+00:00
+2025-11-27 01:18:25,860 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:25.860898+00:00
+2025-11-27 01:18:30,864 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:30.864616+00:00
+2025-11-27 01:18:35,870 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:35.870172+00:00
+2025-11-27 01:18:40,874 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:40.874151+00:00
+2025-11-27 01:18:45,877 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:45.877193+00:00
+2025-11-27 01:18:50,879 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:50.879187+00:00
+2025-11-27 01:18:55,881 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:18:55.881473+00:00
+2025-11-27 01:19:00,887 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:00.887670+00:00
+2025-11-27 01:19:05,892 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:05.892606+00:00
+2025-11-27 01:19:10,898 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:10.898232+00:00
+2025-11-27 01:19:15,904 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:15.903928+00:00
+2025-11-27 01:19:20,909 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:20.909307+00:00
+2025-11-27 01:19:25,914 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:25.914731+00:00
+2025-11-27 01:19:30,919 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:30.919185+00:00
+2025-11-27 01:19:35,920 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:35.920516+00:00
+2025-11-27 01:19:40,926 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:40.926490+00:00
+2025-11-27 01:19:45,930 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:45.930374+00:00
+2025-11-27 01:19:50,936 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:50.936125+00:00
+2025-11-27 01:19:55,941 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:19:55.941605+00:00
+2025-11-27 01:20:00,947 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:00.947588+00:00
+2025-11-27 01:20:05,953 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:05.953082+00:00
+2025-11-27 01:20:10,954 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:10.954609+00:00
+2025-11-27 01:20:15,957 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:15.957031+00:00
+2025-11-27 01:20:20,958 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:20.958226+00:00
+2025-11-27 01:20:25,964 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:25.963847+00:00
+2025-11-27 01:20:30,967 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:30.967676+00:00
+2025-11-27 01:20:35,973 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:35.972936+00:00
+2025-11-27 01:20:40,973 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:40.973828+00:00
+2025-11-27 01:20:45,979 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:45.978849+00:00
+2025-11-27 01:20:50,985 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:50.984949+00:00
+2025-11-27 01:20:55,990 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:20:55.990578+00:00
+2025-11-27 01:21:00,996 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:00.996258+00:00
+2025-11-27 01:21:06,001 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:06.001784+00:00
+2025-11-27 01:21:11,004 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:11.004045+00:00
+2025-11-27 01:21:16,007 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:16.007121+00:00
+2025-11-27 01:21:21,012 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:21.012572+00:00
+2025-11-27 01:21:26,014 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:26.014204+00:00
+2025-11-27 01:21:31,018 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:31.018161+00:00
+2025-11-27 01:21:36,019 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:36.019094+00:00
+2025-11-27 01:21:41,024 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:41.024507+00:00
+2025-11-27 01:21:46,030 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:46.029912+00:00
+2025-11-27 01:21:51,034 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:51.034919+00:00
+2025-11-27 01:21:56,041 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:21:56.040573+00:00
+2025-11-27 01:22:01,046 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:01.046098+00:00
+2025-11-27 01:22:06,050 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:06.047193+00:00
+2025-11-27 01:22:11,053 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:11.052615+00:00
+2025-11-27 01:22:16,059 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:16.059580+00:00
+2025-11-27 01:22:21,065 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:21.065276+00:00
+2025-11-27 01:22:26,071 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:26.070963+00:00
+2025-11-27 01:22:31,077 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:31.077627+00:00
+2025-11-27 01:22:36,083 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:36.083400+00:00
+2025-11-27 01:22:41,090 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:41.089880+00:00
+2025-11-27 01:22:46,095 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:46.093817+00:00
+2025-11-27 01:22:51,101 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:51.101837+00:00
+2025-11-27 01:22:56,108 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:22:56.107645+00:00
+2025-11-27 01:23:01,113 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:01.113687+00:00
+2025-11-27 01:23:06,117 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:06.116984+00:00
+2025-11-27 01:23:11,117 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:11.116966+00:00
+2025-11-27 01:23:16,114 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:16.114018+00:00
+2025-11-27 01:23:21,117 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:21.117797+00:00
+2025-11-27 01:23:26,114 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:26.114697+00:00
+2025-11-27 01:23:31,116 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:31.116821+00:00
+2025-11-27 01:23:36,120 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:36.120218+00:00
+2025-11-27 01:23:41,124 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:41.124508+00:00
+2025-11-27 01:23:46,126 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:46.125970+00:00
+2025-11-27 01:23:51,130 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:51.130601+00:00
+2025-11-27 01:23:56,136 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:23:56.136008+00:00
+2025-11-27 01:24:01,137 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:24:01.137233+00:00
+2025-11-27 01:24:11,267 - DEBUG - Using selector: KqueueSelector
+2025-11-27 01:24:11,267 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-11-27 01:24:11,280 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://10.0.0.209:6000
+2025-11-27 01:24:11,280 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 01:24:16,270 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:24:16.269871+00:00
+2025-11-27 01:24:21,275 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:24:21.275939+00:00
+2025-11-27 01:24:26,282 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:24:26.281427+00:00
+2025-11-27 01:24:31,286 - DEBUG - Running cleanup for expired locks at time: 2025-11-27 09:24:31.286772+00:00

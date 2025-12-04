@@ -39,7 +39,7 @@ class ExpiredLockCleaner:
             # lock.update_status()
             if lock.get_status() == "expired":
                 logger.debug("Cleaning up expired lock with key: %s", key)
-                self.lock_manager.delete_lock(key)
+                self.lock_manager.delete_lock(key, lock.client_id)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,6 @@ from datetime import datetime, timedelta, timezone
 from lock import Lock
 from typing import Dict, Optional
 from lock_exceptions import LockAlreadyHeldException
-import asyncio
 import logging
 
 logging.basicConfig(filename='distributed_locks.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -37,9 +36,7 @@ class LockObjectManager:
             self.locks[key].reset_start_time()
             return self.locks[key]
         else:
-            expiry =  timedelta(seconds=self.expiry) - datetime.now(timezone.utc) - self.start_time  
             logger.error("Lock with key: %s is already held by another client: %s", key, self.locks[key].client_id)
-
             raise LockAlreadyHeldException(f"Lock is already held by another client {self.locks[key].client_id}")
                         
     def get_lock(self, key: str) -> Optional[Lock]:
@@ -52,10 +49,13 @@ class LockObjectManager:
         logger.debug("Retrieving all locks.")
         return self.locks
 
-    def delete_lock(self, key: str) -> bool:
+    def delete_lock(self, key: str, client_id: str) -> bool:
         # Delete a lock object by its key.
         logger.info("Deleting lock with key: %s", key)
         if key in self.locks:
+            if self.locks[key].client_id != client_id:
+                logger.error("Client %s attempted to release lock %s held by client %s", client_id, key, self.locks[key].client_id)
+                raise LockAlreadyHeldException(f"Lock with key {key} is held by another client {self.locks[key].client_id}")
             del self.locks[key]
             return True
         return False    

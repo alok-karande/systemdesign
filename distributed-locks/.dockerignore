@@ -1,0 +1,7 @@
+# List of files and directories to ignore in Docker builds
+__pycache__/
+*.pyc
+*.pyd
+*.so
+.Python
+client/

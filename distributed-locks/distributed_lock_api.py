@@ -37,14 +37,17 @@ def acquire_lock():
 def release_lock():
     data = request.json
     key = data.get("key")
-    if lock_manager.delete_lock(key):
-        return {"status": "success", "message": f"Lock with key {key} released."}, 200
-    else:
-        return {"status": "error", "message": f"Lock with key {key} not found."}, 404
+    client_id = data.get("client_id")
+    try:
+        if lock_manager.delete_lock(key, client_id):
+            return {"status": "success", "message": f"Lock with key {key} released."}, 200
+        else:
+            return {"status": "error", "message": f"Lock with key {key} not found."}, 404
+    except LockAlreadyHeldException as e:
+        return {"status": "error", "message": str(e)}, 409
 
-@app.route("/lock_status", methods=["GET"])
-def lock_status():
-    key = request.args.get("key")
+@app.route("/lock_status/<key>", methods=["GET"])
+def lock_status(key):
     lock = lock_manager.get_lock(key)
     if lock:
         return {"status": "success", "lock_key": lock.key, "lock_status": lock.get_status()}, 200

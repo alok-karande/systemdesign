@@ -20,12 +20,27 @@ class EphemeralNodeManager:
             return ''
         return '/'.join(path.rstrip('/').split('/')[:-1])
 
+    def _get_child_nodes(self, parent_path: str) -> Dict[str, EphemeralNode]:
+        child_nodes = {}
+        for path, node in self.nodes.items():
+            if self._get_parent_Path(path) == parent_path:
+                child_nodes[path] = node
+        return child_nodes
+    
+    def get_current_lock_owner(self, path: str) -> Optional[str]:
+        child_nodes = self._get_child_nodes(path)
+        if not child_nodes:
+            return None
+        # Find the child node with the smallest sequence number
+        min_seq_node = min(child_nodes.values(), key=lambda n: n.seq_num)
+        return min_seq_node.client_id
+
     def create_node(self, path: str, client_id: str, session_expiry: int) -> EphemeralNode:
         logger.debug("Creating ephemeral node at path: %s for client: %s", path, client_id)
         parent_path = self._get_parent_Path(path)
         if parent_path:
             if not parent_path in self.nodes:
-                # WE create the parent node first if it does not exist.
+                # We create the parent node first if it does not exist.
                 logger.debug("Parent path %s does not exist. Creating parent node.", parent_path)
                 parent_node = EphemeralNode(parent_path, client_id, session_expiry)
                 self.nodes[parent_path] = parent_node

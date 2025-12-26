@@ -11,8 +11,5 @@ COPY . .
 
 EXPOSE 6000
 
-# ENTRYPOINT ["python3", "distributed_lock_api.py"]
-
-# CMD ["1", "100"]
 
 CMD ["python3", "distributed_lock_api.py"]

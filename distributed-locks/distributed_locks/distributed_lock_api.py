@@ -50,7 +50,7 @@ def release_lock():
 def lock_status(key):
     lock = lock_manager.get_lock(key)
     if lock:
-        return {"status": "success", "lock_key": lock.key, "lock_status": lock.get_status()}, 200
+        return {"status": "success", "lock_key": lock.key, "lock_status": lock.get_status(), "client_id": lock.client_id}, 200
     else:
         return {"status": "error", "message": f"Lock with key {key} not found."}, 404
     

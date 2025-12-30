@@ -15,6 +15,8 @@ class TicketingService:
         DISTRIBUTED_LOCK_SERVICE_URL="http://localhost:6000", 
         EPHEMERAL_LOCK_SERVICE_URL="http://localhost:6001"):
 
+        if not lock_manager_type in ["distributed_lock", "ephemeral_node"]:
+            raise Exception("Invalid lock manager type specified. Must be 'distributed_lock' or 'ephemeral_node'.")
         self.lock_manager_type = lock_manager_type
         self.base_url = DISTRIBUTED_LOCK_SERVICE_URL if lock_manager_type == "distributed_lock" else EPHEMERAL_LOCK_SERVICE_URL
         self.DB_HOST = DB_HOST
@@ -41,7 +43,7 @@ class TicketingService:
                 self.tickets[row[0]] = (row[1], row[2])  # ticket_id: (sold_to, state)       
             logger.debug(f"Fetched tickets with IDs: {self.tickets}") 
         except (Exception, psycopg2.DatabaseError) as error:
-            logger.debug(error)
+            logger.error(error)
             self._close_connection()
 
 
@@ -70,7 +72,7 @@ class TicketingService:
             self.cursor.execute(query, params)
             self.connection.commit()
         except (Exception, psycopg2.DatabaseError) as error:
-            logger.debug("Error executing query:", error)
+            logger.error(f"Error executing query: {error}")
             self.connection.rollback()
             return False    
         return True
@@ -82,13 +84,28 @@ class TicketingService:
             client_data = {"key": f"ticket_lock_{ticket_id}", "client_id": client_id, "expiry": self.expiry }
             response = requests.post(f"{self.base_url}/acquire_lock", json=client_data)
             if response.status_code == 200:
-                logger.info(f"{client_id} acquired Lock on ticket {ticket_id}:", response.json())
+                logger.info(f"{client_id} acquired Lock on ticket {ticket_id}: {response.json()}")
                 return True
             elif response.status_code == 409:
-                logger.debug("{client_id} could not acquire lock on ticket {ticket_id}:", response.json())
+                logger.debug(f"{client_id} could not acquire lock on ticket {ticket_id}: {response.json()}")
                 return False
         elif self.lock_manager_type == "ephemeral_node":
-            pass
+            # For ephemeral node, we would create an ephemeral node for this ticket.
+            parent_path = f"/locks/ticket_lock_{ticket_id}"
+            client_data = {"path": parent_path, "client_id": client_id, "expiry": self.expiry }
+            response = requests.post(f"{self.base_url}/create_node", json=client_data)
+            if response.status_code == 200:
+                logger.info(f"{client_id} created Ephemeral Node for ticket {ticket_id}: {response.json()}")
+                # Now check if the node is the owner of the lock
+                owner_response = requests.get(f"{self.base_url}/current_lock_owner/{parent_path}")
+                if owner_response.status_code == 200:
+                    owner_info = owner_response.json()
+                    if owner_info.get("current_lock_owner") == client_id:
+                        logger.info(f"{client_id} acquired Lock on ticket {ticket_id} via Ephemeral Node: {owner_info}")
+                        return True
+                else:
+                    logger.debug(f"Could not get current lock owner for ticket {ticket_id}: {owner_response.json()}")
+                    return False
         else:
             raise Exception("Invalid lock manager type specified.")
         
@@ -104,7 +121,14 @@ class TicketingService:
             return False
         elif self.lock_manager_type == "ephemeral_node":
             # For ephemeral node, we would check if the node exists and is owned by the client_id
-            pass
+            parent_path = f"/locks/ticket_lock_{ticket_id}"
+            owner_response = requests.get(f"{self.base_url}/current_lock_owner/{parent_path}")
+            if owner_response.status_code == 200:
+                owner_info = owner_response.json()
+                logger.debug(f"Current lock owner info for ticket {ticket_id}: {owner_info}")
+                if owner_info.get("current_lock_owner") == client_id:
+                    return True
+            return False
         else:
             raise Exception("Invalid lock manager type specified.")
 
@@ -126,7 +150,7 @@ class TicketingService:
                     self.tickets[ticket_id] = (client_id, 'reserved')
                     return True
                 else:
-                    logger.debug ("Failed to update ticket status in DB.")
+                    logger.debug("Failed to update ticket status in DB.")
         return False
 
 
@@ -144,7 +168,7 @@ class TicketingService:
                     self.tickets[ticket_id] = (client_id, 'sold')
                     return True 
                 else:
-                    logger.debug ("Failed to update ticket status in DB.")
+                    logger.debug("Failed to update ticket status in DB.")
         return False
 
     def get_available_tickets(self):
@@ -154,6 +178,9 @@ class TicketingService:
     
     
 if __name__ == "__main__":
+
+    # Only used for local testing of the TicketingService class.
+    # In normal usage, the ticketing_service_api.py is used to expose the APIs and is deployed as a service.
     ticketing_service = TicketingService()
     available_tickets = list(ticketing_service.get_available_tickets())
     logger.debug(f"Available tickets: {available_tickets}")

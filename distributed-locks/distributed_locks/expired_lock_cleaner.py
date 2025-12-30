@@ -1,12 +1,11 @@
 """
-Python code to periodixally cleanup expired locks in a distributed lock system.
+Python code to periodically cleanup expired locks in a distributed lock system.
 """
 from lock_object_manager import LockObjectManager
 from datetime import datetime, timedelta, timezone
 import time
 import threading
 import logging
-import asyncio
 
 logging.basicConfig(filename='cleanup.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -16,9 +15,9 @@ class ExpiredLockCleaner:
         self.lock_manager = lock_manager
         self.cleanup_interval = cleanup_interval  # in seconds
         self.stop_event = threading.Event()
-        self.thread = threading.Thread(target=self._run_cleanup)
+        self.thread = threading.Thread(target=self._run_cleanup, daemon=True)
         
-    async def start(self):
+    def start(self):
         logger.debug("Starting Expired Lock Cleaner thread.")
         self.thread.start()
 
@@ -34,19 +33,22 @@ class ExpiredLockCleaner:
 
     def cleanup_expired_locks(self):
         logger.debug("Running cleanup for expired locks at time: %s", datetime.now(timezone.utc))   
-        items = list(self.lock_manager.locks.items())     
+        items = list(self.lock_manager.locks.items())
         for key, lock in items:
             # lock.update_status()
             if lock.get_status() == "expired":
                 logger.debug("Cleaning up expired lock with key: %s", key)
-                self.lock_manager.delete_lock(key, lock.client_id)
+                try:
+                    self.lock_manager.delete_lock(key, lock.client_id)
+                except Exception as e:
+                    logger.error("Error deleting expired lock with key: %s - %s", key, str(e))
 
 
 if __name__ == "__main__":
     lock_manager = LockObjectManager()
     cleaner = ExpiredLockCleaner(lock_manager, cleanup_interval=5)
     cleaner.start()
-    """
+    '''
     try:
         # Simulate the main application running
         while True:
@@ -55,7 +57,7 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         cleaner.stop()
-    """
+    '''
     
 
 

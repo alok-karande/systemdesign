@@ -1,5 +1,5 @@
 """
-Testing distributed lock functionality.
+Distributed lock API implementation using Flask.
 """
 import logging
 
@@ -8,8 +8,8 @@ from lock_object_manager import LockObjectManager
 from lock_exceptions import LockAlreadyHeldException
 from expired_lock_cleaner import ExpiredLockCleaner
 import time
-import asyncio
 from flask import Flask, request
+import threading
 
 
 # Initialize Flask app, logger, lock manager, and expired lock cleaner
@@ -18,12 +18,14 @@ logging.basicConfig(filename='distributed_locks.log', level=logging.DEBUG, forma
 logger = logging.getLogger(__name__)
 lock_manager = LockObjectManager()
 expired_lock_cleaner = ExpiredLockCleaner(lock_manager, cleanup_interval=5)
-asyncio.run(expired_lock_cleaner.start())
+expired_lock_cleaner.start()
 
 
 @app.route("/acquire_lock", methods=["POST"])
 def acquire_lock():
     data = request.json
+    if not "key" in data or not "client_id" in data or not "expiry" in data:
+        return {"status": "error", "message": "Missing required parameters: key, client_id, expiry"}, 400
     key = data.get("key")
     client_id = data.get("client_id")
     expiry = data.get("expiry")
@@ -36,6 +38,8 @@ def acquire_lock():
 @app.route("/release_lock", methods=["POST"])
 def release_lock():
     data = request.json
+    if not "key" in data or not "client_id" in data:
+        return {"status": "error", "message": "Missing required parameters: key, client_id"}, 400
     key = data.get("key")
     client_id = data.get("client_id")
     try:
@@ -70,9 +74,6 @@ if __name__ == "__main__":
     client_2_id = "client_2"
     lock_key = "resource_lock"
     lock_expiry = 5  # seconds
-    lock_manager = LockObjectManager()
-    expired_lock_cleaner = ExpiredLockCleaner(lock_manager, cleanup_interval=5)
-    asyncio.run(expired_lock_cleaner.start())
 
     try:
         lock1 = lock_manager.acquire_lock(lock_key, client_1_id, lock_expiry)
@@ -97,5 +98,5 @@ if __name__ == "__main__":
     time.sleep(lock_expiry + 10)
     # Check the logs here
 
-    '''
-    
+    expired_lock_cleaner.stop()
+'''

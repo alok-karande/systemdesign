@@ -1,231 +1,32 @@
-    2025-12-24 23:09:15,853 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:09:15,856 - DEBUG - Fetched tickets with IDs: {3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold')}
-2025-12-24 23:09:15,856 - DEBUG - Available tickets: [3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-24 23:09:15,859 - DEBUG - Starting new HTTP connection (1): localhost:6001
-2025-12-24 23:10:16,626 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:10:16,627 - DEBUG - Fetched tickets with IDs: {3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold')}
-2025-12-24 23:10:16,627 - DEBUG - Available tickets: [3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-24 23:10:16,630 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:10:16,648 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-24 23:10:16,649 - INFO - client_1 acquired Lock on ticket 3:
-2025-12-24 23:10:16,652 - DEBUG - Ticket 3 reserved by client_1.
-2025-12-24 23:10:16,653 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:10:16,655 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_3 HTTP/1.1" 200 71
-2025-12-24 23:10:16,656 - DEBUG - Lock info for ticket 3:
-2025-12-24 23:10:16,657 - DEBUG - Ticket 3 booked by client_1.
-2025-12-24 23:11:51,474 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:11:51,477 - DEBUG - Fetched tickets with IDs: {4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold'), 3: ('client_1', 'sold')}
-2025-12-24 23:11:51,477 - DEBUG - Available tickets: [4, 5, 6, 7, 8, 9, 10]
-2025-12-24 23:11:51,479 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:11:51,510 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-24 23:11:51,511 - INFO - client_1 acquired Lock on ticket 4:
-2025-12-24 23:11:51,522 - DEBUG - Ticket 4 reserved by client_1.
-2025-12-24 23:11:51,522 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:11:51,524 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_4 HTTP/1.1" 200 71
-2025-12-24 23:11:51,524 - DEBUG - Lock info for ticket 4:
-2025-12-24 23:11:51,525 - DEBUG - Ticket 4 booked by client_1.
-2025-12-24 23:19:11,965 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:19:11,968 - DEBUG - Fetched tickets with IDs: {5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold'), 3: ('client_1', 'sold'), 4: ('client_1', 'sold')}
-2025-12-24 23:19:11,968 - DEBUG - Available tickets: [5, 6, 7, 8, 9, 10]
-2025-12-24 23:19:11,968 - DEBUG - client_1 attempting to reserve ticket 5
-2025-12-24 23:19:11,968 - DEBUG - client_1 attempting to acquire lock for ticket 5
-2025-12-24 23:19:11,970 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:19:11,991 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-24 23:19:11,991 - INFO - client_1 acquired Lock on ticket 5:
-2025-12-24 23:19:11,993 - DEBUG - Ticket 5 reserved by client_1.
-2025-12-24 23:19:11,993 - DEBUG - Checking if client_1 has lock for ticket 5
-2025-12-24 23:19:11,994 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:19:11,996 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_5 HTTP/1.1" 200 71
-2025-12-24 23:19:11,996 - DEBUG - Lock info for ticket 5:
-2025-12-24 23:19:11,997 - DEBUG - Ticket 5 booked by client_1.
-2025-12-24 23:19:57,788 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:19:57,790 - DEBUG - Fetched tickets with IDs: {6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold'), 3: ('client_1', 'sold'), 4: ('client_1', 'sold'), 5: ('client_1', 'sold')}
-2025-12-24 23:19:57,790 - DEBUG - Available tickets: [6, 7, 8, 9, 10]
-2025-12-24 23:19:57,790 - DEBUG - client_1 attempting to reserve ticket 6
-2025-12-24 23:19:57,790 - DEBUG - client_1 attempting to acquire lock for ticket 6
-2025-12-24 23:19:57,793 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:19:57,809 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-24 23:19:57,809 - INFO - client_1 acquired Lock on ticket 6:
-2025-12-24 23:19:57,811 - DEBUG - Ticket 6 reserved by client_1.
-2025-12-24 23:19:57,811 - DEBUG - client_1 attempting to book ticket 6
-2025-12-24 23:19:57,811 - DEBUG - Checking if client_1 has lock for ticket 6
-2025-12-24 23:19:57,811 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:19:57,813 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_6 HTTP/1.1" 200 71
-2025-12-24 23:19:57,814 - DEBUG - Lock info for ticket 6:
-2025-12-24 23:19:57,815 - DEBUG - Ticket 6 booked by client_1.
-2025-12-24 23:20:17,344 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-24 23:20:17,345 - DEBUG - Fetched tickets with IDs: {7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold'), 2: ('client_1', 'sold'), 3: ('client_1', 'sold'), 4: ('client_1', 'sold'), 5: ('client_1', 'sold'), 6: ('client_1', 'sold')}
-2025-12-24 23:20:17,345 - DEBUG - Available tickets: [7, 8, 9, 10]
-2025-12-24 23:20:17,345 - DEBUG - client_1 attempting to reserve ticket 7
-2025-12-24 23:20:17,345 - DEBUG - client_1 attempting to acquire lock for ticket 7
-2025-12-24 23:20:17,347 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:20:17,360 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-24 23:20:17,360 - INFO - client_1 acquired Lock on ticket 7:
-2025-12-24 23:20:17,363 - DEBUG - Ticket 7 reserved by client_1.
-2025-12-24 23:20:17,363 - DEBUG - client_1 attempting to book ticket 7
-2025-12-24 23:20:17,363 - DEBUG - Checking if client_1 has lock for ticket 7
-2025-12-24 23:20:17,363 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-24 23:20:17,366 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_7 HTTP/1.1" 200 71
-2025-12-24 23:20:17,366 - DEBUG - Lock info for ticket 7:
-2025-12-24 23:20:17,368 - DEBUG - Ticket 7 booked by client_1.
-2025-12-25 01:04:46,036 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 01:04:46,038 - DEBUG - Fetched tickets with IDs: {3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: ('client_2224', 'reserved'), 10: ('client_2224', 'reserved'), 1: ('client_1223', 'reserved'), 2: ('client_2224', 'reserved')}
-2025-12-25 01:04:46,038 - DEBUG - Available tickets: [3, 4, 5, 6, 7, 8]
-2025-12-25 01:04:46,038 - DEBUG - client_1 attempting to reserve ticket 3
-2025-12-25 01:04:46,038 - DEBUG - client_1 attempting to acquire lock for ticket 3
-2025-12-25 01:04:46,041 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:04:46,060 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 01:04:46,060 - INFO - client_1 acquired Lock on ticket 3:
-2025-12-25 01:04:46,064 - DEBUG - Ticket 3 reserved by client_1.
-2025-12-25 01:04:46,064 - DEBUG - client_1 attempting to book ticket 3
-2025-12-25 01:04:46,064 - DEBUG - Checking if client_1 has lock for ticket 3
-2025-12-25 01:04:46,064 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:04:46,068 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_3 HTTP/1.1" 200 71
-2025-12-25 01:04:46,068 - DEBUG - Lock info for ticket 3:
-2025-12-25 01:04:46,068 - DEBUG - Failed to book ticket 3 by client_1.
-2025-12-25 01:09:20,251 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 01:09:20,255 - DEBUG - Fetched tickets with IDs: {4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: ('client_2224', 'reserved'), 10: ('client_2224', 'reserved'), 1: ('client_1223', 'reserved'), 2: ('client_2224', 'reserved'), 3: ('client_1', 'reserved')}
-2025-12-25 01:09:20,255 - DEBUG - Available tickets: [4, 5, 6, 7, 8]
-2025-12-25 01:09:20,255 - DEBUG - client_1 attempting to reserve ticket 4
-2025-12-25 01:09:20,255 - DEBUG - client_1 attempting to acquire lock for ticket 4
-2025-12-25 01:09:20,267 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:09:20,320 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 01:09:20,322 - INFO - client_1 acquired Lock on ticket 4:
-2025-12-25 01:12:04,690 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 01:12:04,692 - DEBUG - Fetched tickets with IDs: {4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: ('client_2224', 'reserved'), 10: ('client_2224', 'reserved'), 1: ('client_1223', 'reserved'), 2: ('client_2224', 'reserved'), 3: ('client_1', 'reserved')}
-2025-12-25 01:12:04,692 - DEBUG - Available tickets: [4, 5, 6, 7, 8]
-2025-12-25 01:12:04,692 - DEBUG - client_1 attempting to reserve ticket 4
-2025-12-25 01:12:04,692 - DEBUG - client_1 attempting to acquire lock for ticket 4
-2025-12-25 01:12:04,695 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:12:04,711 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 01:12:04,712 - INFO - client_1 acquired Lock on ticket 4:
-2025-12-25 01:12:04,717 - DEBUG - Ticket 4 reserved by client_1.
-2025-12-25 01:12:04,717 - DEBUG - client_1 attempting to book ticket 4
-2025-12-25 01:12:04,717 - DEBUG - Checking if client_1 has lock for ticket 4
-2025-12-25 01:12:04,717 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:12:04,719 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_4 HTTP/1.1" 200 71
-2025-12-25 01:12:04,720 - DEBUG - Lock info for ticket 4:
-2025-12-25 01:12:04,720 - DEBUG - Failed to book ticket 4 by client_1.
-2025-12-25 01:12:12,079 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 01:12:12,080 - DEBUG - Fetched tickets with IDs: {5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: ('client_2224', 'reserved'), 10: ('client_2224', 'reserved'), 1: ('client_1223', 'reserved'), 2: ('client_2224', 'reserved'), 3: ('client_1', 'reserved'), 4: ('client_1', 'reserved')}
-2025-12-25 01:12:12,080 - DEBUG - Available tickets: [5, 6, 7, 8]
-2025-12-25 01:12:12,080 - DEBUG - client_1 attempting to reserve ticket 5
-2025-12-25 01:12:12,081 - DEBUG - client_1 attempting to acquire lock for ticket 5
-2025-12-25 01:12:12,087 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:12:12,113 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 01:12:12,115 - INFO - client_1 acquired Lock on ticket 5:
-2025-12-25 01:12:16,015 - DEBUG - Ticket 5 reserved by client_1.
-2025-12-25 01:12:16,015 - DEBUG - client_1 attempting to book ticket 5
-2025-12-25 01:12:16,015 - DEBUG - Checking if client_1 has lock for ticket 5
-2025-12-25 01:12:16,018 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 01:12:16,022 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_5 HTTP/1.1" 200 71
-2025-12-25 01:12:43,166 - DEBUG - Lock info for ticket 5:
-2025-12-25 14:08:38,754 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:08:38,755 - DEBUG - Fetched tickets with IDs: {1: (None, 'available'), 2: (None, 'available'), 3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available')}
-2025-12-25 14:08:38,755 - DEBUG - Available tickets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:08:38,755 - DEBUG - client_1 attempting to reserve ticket 1
-2025-12-25 14:08:38,755 - DEBUG - client_1 attempting to acquire lock for ticket 1
-2025-12-25 14:08:38,758 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:08:38,770 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:08:38,771 - INFO - client_1 acquired Lock on ticket 1:
-2025-12-25 14:08:38,772 - DEBUG - Ticket 1 reserved by client_1.
-2025-12-25 14:08:38,772 - DEBUG - client_1 attempting to book ticket 1
-2025-12-25 14:08:38,772 - DEBUG - Checking if client_1 has lock for ticket 1
-2025-12-25 14:08:38,773 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:08:38,774 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_1 HTTP/1.1" 200 71
-2025-12-25 14:08:38,775 - DEBUG - Lock info for ticket 1: {'lock_key': 'ticket_lock_1', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:08:38,775 - DEBUG - Failed to book ticket 1 by client_1.
-2025-12-25 14:10:28,855 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:10:28,857 - DEBUG - Fetched tickets with IDs: {2: (None, 'available'), 3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved')}
-2025-12-25 14:10:28,857 - DEBUG - Available tickets: [2, 3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:10:28,858 - DEBUG - client_1 attempting to reserve ticket 2
-2025-12-25 14:10:28,858 - DEBUG - client_1 attempting to acquire lock for ticket 2
-2025-12-25 14:10:28,863 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:10:28,897 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:10:28,899 - INFO - client_1 acquired Lock on ticket 2:
-2025-12-25 14:11:14,873 - DEBUG - Ticket 2 reserved by client_1.
-2025-12-25 14:11:16,431 - DEBUG - client_1 attempting to book ticket 2
-2025-12-25 14:12:07,439 - DEBUG - Checking if client_1 has lock for ticket 2
-2025-12-25 14:12:07,452 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:12:07,464 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_2 HTTP/1.1" 404 70
-2025-12-25 14:12:18,047 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-12-25 14:12:36,491 - DEBUG - Encoding detection: ascii is most likely the one.
-2025-12-25 14:20:30,873 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:20:30,875 - DEBUG - Fetched tickets with IDs: {3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved'), 2: ('client_1', 'reserved')}
-2025-12-25 14:20:30,875 - DEBUG - Available tickets: [3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:20:30,875 - DEBUG - client_1 attempting to reserve ticket 3
-2025-12-25 14:20:30,875 - DEBUG - client_1 attempting to acquire lock for ticket 3
-2025-12-25 14:20:30,877 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:20:30,892 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:20:30,892 - INFO - client_1 acquired Lock on ticket 3:
-2025-12-25 14:20:30,894 - DEBUG - Ticket 3 reserved by client_1.
-2025-12-25 14:20:30,894 - DEBUG - client_1 attempting to book ticket 3
-2025-12-25 14:20:30,894 - DEBUG - Checking if client_1 has lock for ticket 3
-2025-12-25 14:20:30,895 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:20:30,898 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_3 HTTP/1.1" 200 71
-2025-12-25 14:20:30,898 - DEBUG - Lock info for ticket 3: {'lock_key': 'ticket_lock_3', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:20:30,898 - DEBUG - Failed to book ticket 3 by client_1.
-2025-12-25 14:22:11,976 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:22:11,979 - DEBUG - Fetched tickets with IDs: {4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved'), 2: ('client_1', 'reserved'), 3: ('client_1', 'reserved')}
-2025-12-25 14:22:11,979 - DEBUG - Available tickets: [4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:22:11,979 - DEBUG - client_1 attempting to reserve ticket 4
-2025-12-25 14:22:11,979 - DEBUG - client_1 attempting to acquire lock for ticket 4
-2025-12-25 14:22:11,985 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:22:12,011 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:22:12,012 - INFO - client_1 acquired Lock on ticket 4:
-2025-12-25 14:22:12,015 - DEBUG - Ticket 4 reserved by client_1.
-2025-12-25 14:22:15,013 - DEBUG - client_1 attempting to book ticket 4
-2025-12-25 14:22:15,407 - DEBUG - Checking if client_1 has lock for ticket 4
-2025-12-25 14:22:15,413 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:22:15,426 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_4 HTTP/1.1" 200 71
-2025-12-25 14:22:19,348 - DEBUG - Lock info for ticket 4: {'lock_key': 'ticket_lock_4', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:26:37,725 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:26:37,727 - DEBUG - Fetched tickets with IDs: {5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved'), 2: ('client_1', 'reserved'), 3: ('client_1', 'reserved'), 4: ('client_1', 'reserved')}
-2025-12-25 14:26:37,727 - DEBUG - Available tickets: [5, 6, 7, 8, 9, 10]
-2025-12-25 14:26:37,727 - DEBUG - client_1 attempting to reserve ticket 5
-2025-12-25 14:26:37,728 - DEBUG - client_1 attempting to acquire lock for ticket 5
-2025-12-25 14:26:37,730 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:26:37,747 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:26:37,747 - INFO - client_1 acquired Lock on ticket 5:
-2025-12-25 14:26:37,749 - DEBUG - Ticket 5 reserved by client_1.
-2025-12-25 14:26:37,749 - DEBUG - client_1 attempting to book ticket 5
-2025-12-25 14:26:37,749 - DEBUG - Checking if client_1 has lock for ticket 5
-2025-12-25 14:26:37,749 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:26:37,751 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_5 HTTP/1.1" 200 94
-2025-12-25 14:26:37,752 - DEBUG - Lock info for ticket 5: {'client_id': 'client_1', 'lock_key': 'ticket_lock_5', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:26:37,753 - DEBUG - Ticket 5 booked by client_1.
-2025-12-25 14:29:46,176 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:29:46,180 - DEBUG - Fetched tickets with IDs: {6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved'), 2: ('client_1', 'reserved'), 3: ('client_1', 'reserved'), 4: ('client_1', 'reserved'), 5: ('client_1', 'sold')}
-2025-12-25 14:29:48,561 - DEBUG - Available tickets: [6, 7, 8, 9, 10]
-2025-12-25 14:31:12,084 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:31:12,086 - DEBUG - Fetched tickets with IDs: {6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'reserved'), 2: ('client_1', 'reserved'), 3: ('client_1', 'reserved'), 4: ('client_1', 'reserved'), 5: ('client_1', 'sold')}
-2025-12-25 14:41:23,404 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:41:23,405 - DEBUG - Fetched tickets with IDs: {1: (None, 'available'), 2: (None, 'available'), 3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available')}
-2025-12-25 14:41:23,405 - DEBUG - Available tickets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:41:23,405 - DEBUG - client_1 attempting to reserve ticket 1
-2025-12-25 14:41:23,405 - DEBUG - client_1 attempting to acquire lock for ticket 1
-2025-12-25 14:41:23,407 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:41:23,419 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:41:23,420 - INFO - client_1 acquired Lock on ticket 1:
-2025-12-25 14:41:23,421 - DEBUG - Ticket 1 reserved by client_1.
-2025-12-25 14:41:23,421 - DEBUG - client_1 attempting to book ticket 1
-2025-12-25 14:41:23,421 - DEBUG - Checking if client_1 has lock for ticket 1
-2025-12-25 14:41:23,422 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:41:23,423 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_1 HTTP/1.1" 200 94
-2025-12-25 14:41:23,423 - DEBUG - Lock info for ticket 1: {'client_id': 'client_1', 'lock_key': 'ticket_lock_1', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:41:23,424 - DEBUG - Ticket 1 booked by client_1.
-2025-12-25 14:41:27,153 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
-2025-12-25 14:41:27,155 - DEBUG - Fetched tickets with IDs: {2: (None, 'available'), 3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available'), 1: ('client_1', 'sold')}
-2025-12-25 14:41:27,155 - DEBUG - Available tickets: [2, 3, 4, 5, 6, 7, 8, 9, 10]
-2025-12-25 14:41:27,155 - DEBUG - client_1 attempting to reserve ticket 2
-2025-12-25 14:41:27,155 - DEBUG - client_1 attempting to acquire lock for ticket 2
-2025-12-25 14:41:27,157 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:41:27,167 - DEBUG - http://localhost:6000 "POST /acquire_lock HTTP/1.1" 200 71
-2025-12-25 14:41:27,167 - INFO - client_1 acquired Lock on ticket 2:
-2025-12-25 14:41:27,169 - DEBUG - Ticket 2 reserved by client_1.
-2025-12-25 14:41:27,169 - DEBUG - client_1 attempting to book ticket 2
-2025-12-25 14:41:27,169 - DEBUG - Checking if client_1 has lock for ticket 2
-2025-12-25 14:41:27,169 - DEBUG - Starting new HTTP connection (1): localhost:6000
-2025-12-25 14:41:27,172 - DEBUG - http://localhost:6000 "GET /lock_status/ticket_lock_2 HTTP/1.1" 200 94
-2025-12-25 14:41:27,172 - DEBUG - Lock info for ticket 2: {'client_id': 'client_1', 'lock_key': 'ticket_lock_2', 'lock_status': 'locked', 'status': 'success'}
-2025-12-25 14:41:27,174 - DEBUG - Ticket 2 booked by client_1.
+2025-12-29 23:09:53,271 - INFO - DB exists: (1,)
+2025-12-29 23:09:53,271 - INFO - Database ticketdb already exists.
+2025-12-29 23:09:53,281 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:09:53,281 - ERROR - Error initializing ticketing service DB: cursor already closed
+2025-12-29 23:10:57,241 - INFO - DB exists: (1,)
+2025-12-29 23:10:59,233 - INFO - Database ticketdb already exists.
+2025-12-29 23:11:03,966 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:11:17,222 - INFO - DB exists: (1,)
+2025-12-29 23:11:17,222 - INFO - Database ticketdb already exists.
+2025-12-29 23:11:17,233 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:11:17,240 - INFO - Ticket state enum type created successfully.
+2025-12-29 23:11:17,240 - ERROR - Error initializing ticketing service DB: syntax error at or near ")"
+LINE 6:         );
+                ^
+
+2025-12-29 23:11:52,737 - INFO - DB exists: (1,)
+2025-12-29 23:11:54,854 - INFO - Database ticketdb already exists.
+2025-12-29 23:11:58,420 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:12:02,611 - INFO - Ticket state enum type created successfully.
+2025-12-29 23:12:57,724 - INFO - DB exists: (1,)
+2025-12-29 23:12:57,725 - INFO - Database ticketdb already exists.
+2025-12-29 23:13:02,319 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:13:08,858 - INFO - Ticket state enum type created successfully.
+2025-12-29 23:13:34,237 - INFO - DB exists: (1,)
+2025-12-29 23:13:34,237 - INFO - Database ticketdb already exists.
+2025-12-29 23:13:34,247 - INFO - Tickets table already exists. Recreating it. Existing data will be deleted
+2025-12-29 23:13:34,252 - INFO - Ticket state enum type created successfully.
+2025-12-29 23:13:34,264 - INFO - Tickets table created successfully.
+2025-12-29 23:13:34,267 - INFO - Initial tickets inserted successfully.
+2025-12-29 23:14:43,671 - INFO - Updating PostGresSQL Endpoint to localhost, Distributed Lock Endpoint to http://localhost:6000 and Ephemeral Lock Endpoint to http://localhost:6001
+2025-12-29 23:14:43,708 - DEBUG - PostgreSQL database version: ('PostgreSQL 18.1 (Debian 18.1-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit',)
+2025-12-29 23:14:43,709 - DEBUG - Fetched tickets with IDs: {1: (None, 'available'), 2: (None, 'available'), 3: (None, 'available'), 4: (None, 'available'), 5: (None, 'available'), 6: (None, 'available'), 7: (None, 'available'), 8: (None, 'available'), 9: (None, 'available'), 10: (None, 'available')}

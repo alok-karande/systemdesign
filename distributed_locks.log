@@ -1017,3 +1017,51 @@ AttributeError: 'LockObjectManager' object has no attribute 'expiry'
 2025-11-28 00:36:17,420 - DEBUG - Running cleanup for expired locks at time: 2025-11-28 08:36:17.420818+00:00
 2025-11-28 00:36:22,425 - DEBUG - Running cleanup for expired locks at time: 2025-11-28 08:36:22.424989+00:00
 2025-11-28 00:36:27,431 - DEBUG - Running cleanup for expired locks at time: 2025-11-28 08:36:27.430933+00:00
+2025-12-29 14:43:41,983 - INFO - Starting the async cleaner in a new thread...
+2025-12-29 14:43:41,984 - DEBUG - Using selector: KqueueSelector
+2025-12-29 14:43:41,984 - DEBUG - Using selector: KqueueSelector
+2025-12-29 14:43:41,984 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-12-29 14:43:41,984 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-12-29 14:43:41,984 - INFO - Async cleaner stopped.
+2025-12-29 14:43:46,992 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:43:46.989582+00:00
+2025-12-29 14:43:51,994 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:43:51.994354+00:00
+2025-12-29 14:43:56,996 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:43:56.996564+00:00
+2025-12-29 14:44:02,002 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:02.002841+00:00
+2025-12-29 14:44:07,007 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:07.007788+00:00
+2025-12-29 14:44:12,010 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:12.010589+00:00
+2025-12-29 14:44:17,014 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:17.014836+00:00
+2025-12-29 14:44:22,017 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:22.017488+00:00
+2025-12-29 14:44:27,023 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:27.023764+00:00
+2025-12-29 14:44:30,085 - INFO - Starting the async cleaner in a new thread...
+2025-12-29 14:44:30,085 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_1
+2025-12-29 14:44:30,085 - DEBUG - Using selector: KqueueSelector
+2025-12-29 14:44:30,086 - DEBUG - Creating new lock with key: resource_lock for client: client_1
+2025-12-29 14:44:30,086 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_2
+2025-12-29 14:44:30,086 - ERROR - Lock with key: resource_lock is already held by another client: client_1
+2025-12-29 14:44:30,086 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-12-29 14:44:30,086 - INFO - Async cleaner stopped.
+2025-12-29 14:44:35,091 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:35.091380+00:00
+2025-12-29 14:44:36,091 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_2
+2025-12-29 14:44:36,092 - DEBUG - Acquiring expired lock with key: resource_lock for new client: client_2
+2025-12-29 14:44:40,097 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:40.097129+00:00
+2025-12-29 14:44:45,102 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:45.102305+00:00
+2025-12-29 14:44:50,104 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:50.103986+00:00
+2025-12-29 14:44:51,096 - DEBUG - Stopping Expired Lock Cleaner thread.
+2025-12-29 14:44:55,109 - DEBUG - Running cleanup for expired locks at time: 2025-12-29 22:44:55.109603+00:00
+2025-12-29 21:42:45,186 - DEBUG - Starting Expired Lock Cleaner thread.
+2025-12-29 21:42:45,187 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_1 with expiry 5
+2025-12-29 21:42:45,187 - DEBUG - Creating new lock with key: resource_lock for client: client_1
+2025-12-29 21:42:45,187 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_2 with expiry 5
+2025-12-29 21:42:45,187 - ERROR - Lock with key: resource_lock is already held by another client: client_1
+2025-12-29 21:42:50,192 - DEBUG - Running cleanup for expired locks at time: 2025-12-30 05:42:50.192010+00:00
+2025-12-29 21:42:50,192 - DEBUG - Cleaning up expired lock with key: resource_lock
+2025-12-29 21:42:50,192 - INFO - Deleting lock with key: resource_lock and client_id: client_1
+2025-12-29 21:42:51,193 - DEBUG - Attempting to acquire lock with key: resource_lock for client: client_2 with expiry 5
+2025-12-29 21:42:51,193 - DEBUG - Creating new lock with key: resource_lock for client: client_2
+2025-12-29 21:42:55,194 - DEBUG - Running cleanup for expired locks at time: 2025-12-30 05:42:55.194518+00:00
+2025-12-29 21:43:00,200 - DEBUG - Running cleanup for expired locks at time: 2025-12-30 05:43:00.200193+00:00
+2025-12-29 21:43:00,200 - DEBUG - Cleaning up expired lock with key: resource_lock
+2025-12-29 21:43:00,200 - INFO - Deleting lock with key: resource_lock and client_id: client_2
+2025-12-29 21:43:05,205 - DEBUG - Running cleanup for expired locks at time: 2025-12-30 05:43:05.205608+00:00
+2025-12-29 21:43:06,199 - DEBUG - Stopping Expired Lock Cleaner thread.
+2025-12-29 21:43:10,210 - DEBUG - Running cleanup for expired locks at time: 2025-12-30 05:43:10.210555+00:00

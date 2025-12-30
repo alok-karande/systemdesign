@@ -1,5 +1,5 @@
 """
-Python code to periodixally cleanup expired locks in a distributed lock system.
+Python code to periodically cleanup expired locks in a distributed lock system.
 """
 from ephemeral_node_manager import EphemeralNodeManager
 from datetime import datetime, timedelta, timezone
@@ -16,9 +16,9 @@ class ExpiredLockCleaner:
         self.node_manager = node_manager
         self.cleanup_interval = cleanup_interval  # in seconds
         self.stop_event = threading.Event()
-        self.thread = threading.Thread(target=self._run_cleanup)
+        self.thread = threading.Thread(target=self._run_cleanup, daemon=True)
         
-    async def start(self):
+    def start(self):
         logger.debug("Starting Expired Lock Cleaner thread.")
         self.thread.start()
 
@@ -37,10 +37,12 @@ class ExpiredLockCleaner:
         logger.debug("Running cleanup for expired locks at time: %s", datetime.now(timezone.utc))   
         self.node_manager.cleanup_expired_nodes()
 
-    def cleanup_leaf_nodes(self):
+    def cleanup_leaf_nodes(self): # We only cleanup parent nodes that have no children.
         logger.debug("Cleaning up leaf nodes at time: %s", datetime.now(timezone.utc))   
         items = list(self.node_manager.nodes.items())     
         for path, node in items:
+            if not node.is_parent_node():
+                continue
             child_nodes = self.node_manager._get_child_nodes(path)
             if not child_nodes:
                 logger.debug("Cleaning up leaf node at path: %s", path)
@@ -50,7 +52,7 @@ if __name__ == "__main__":
     node_manager = EphemeralNodeManager()
     cleaner = ExpiredLockCleaner(node_manager=node_manager, cleanup_interval=5)
     cleaner.start()
-    """
+    '''
     try:
         # Simulate the main application running
         while True:
@@ -59,11 +61,6 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         cleaner.stop()
-    """
-    
-
-
-    
-
+    '''
 
 

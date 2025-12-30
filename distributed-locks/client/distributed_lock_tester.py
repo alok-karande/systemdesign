@@ -3,8 +3,15 @@ Client to test distributed locks
 """
 import requests, time
 
-base_url = "http://localhost:6000"
+# Set the base Lock URL and Ephemeral Node URL
+base_lock_url = "http://localhost:6000"
+base_ephemeral_url = "http://localhost:6001"
+
+# We set the ticketing service URL here
 base_ticketing_url= "http://localhost:6005"
+
+# THis is an alternate URL if running ticketing service separately on two seperate ports
+# base_ticketing_url= "http://localhost:6006"
 
 
 def init_ticketing_service_db():
@@ -21,7 +28,7 @@ def test_distributed_locks():
         "client_id": "client_1",
         "expiry": 10  # seconds
     }
-    response = requests.post(f"{base_url}/acquire_lock", json=client_1_data)
+    response = requests.post(f"{base_lock_url}/acquire_lock", json=client_1_data)
     if response.status_code == 200:
         print("Client 1 Acquire Lock Response:", response.json())
     elif response.status_code == 409:
@@ -33,21 +40,59 @@ def test_distributed_locks():
         "client_id": "client_2",
         "expiry": 10  # seconds
     }
-    response = requests.post(f"{base_url}/acquire_lock", json=client_2_data)
+    response = requests.post(f"{base_lock_url}/acquire_lock", json=client_2_data)
     print("Client 2 Acquire Lock Response:", response.json())
 
     # Client 1 checks lock status
-    response = requests.get(f"{base_url}/lock_status/resource_lock")
+    response = requests.get(f"{base_lock_url}/lock_status/resource_lock")
     print("Client 1 Lock Status Response:", response.json())
 
     # Client 1 releases the lock
-    response = requests.post(f"{base_url}/release_lock", json={"key": "resource_lock", "client_id": "client_1"})
+    response = requests.post(f"{base_lock_url}/release_lock", json={"key": "resource_lock", "client_id": "client_1"})
     print("Client 1 Release Lock Response:", response.json())
 
     # Client 2 tries to acquire the lock again
-    response = requests.post(f"{base_url}/acquire_lock", json=client_2_data)
+    response = requests.post(f"{base_lock_url}/acquire_lock", json=client_2_data)
     print("Client 2 Acquire Lock After Release Response:", response.json())
 
+    # Client 1 waits for lock to expire
+    print("Sleeping for 12 seconds to let the lock expire...")
+    time.sleep(12)  
+    response = requests.post(f"{base_lock_url}/acquire_lock", json=client_1_data)
+    print("Client 1 Acquire Lock After Expiry Response:", response.json())
+
+
+def test_ephemeral_nodes():
+    # Test ephemeral node behavior
+    response = requests.post(f"{base_ephemeral_url}/create_node", json={
+        "path": "/locks/ticket1",
+        "client_id": "client1",
+        "expiry": 5
+    })
+    print("Ephemeral Node Acquire Lock Response:", response.json())
+
+    response = requests.get(f"{base_ephemeral_url}/current_lock_owner", params={"path": "/locks/ticket1"})
+    print("Current Lock Owner Response:", response.json())
+
+
+    response = requests.post(f"{base_ephemeral_url}/create_node", json={
+        "path": "/locks/ticket1",
+        "client_id": "client2",
+        "expiry": 5
+    })
+    print("Ephemeral Node 2 Acquire Lock Response:", response.json())
+    response = requests.get(f"{base_ephemeral_url}/current_lock_owner", params={"path": "/locks/ticket1"})
+    print("Current Lock Owner Response:", response.json())
+
+
+    # Wait for lock to expire
+    time.sleep(15)
+    response = requests.get(f"{base_ephemeral_url}/current_lock_owner", params={"path": "/locks/ticket1"})
+    print("Current Lock Owner After Expiry:", response.json())
+
+    time.sleep(15)
+    response = requests.get(f"{base_ephemeral_url}/current_lock_owner", params={"path": "/locks/ticket1"})
+    print("Current Lock Owner After Further Expiry:", response.json())
 
 def test_ticket_reservation():
     try:
@@ -94,8 +139,12 @@ def test_ticket_reservation():
 
 
 if __name__ == "__main__":
+    
+    # Tests for Ephemeral Nodes Service
+    #test_ephemeral_nodes()
 
-    # init_ticketing_service_db()
-
+    # Tests for Distributed Lock Service: Mutually exclusive with Ephemeral Nodes
     # test_distributed_locks()
+
+    # Tests for Ticket Reservation and Booking Service
     test_ticket_reservation()

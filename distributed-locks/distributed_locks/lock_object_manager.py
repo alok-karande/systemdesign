@@ -17,9 +17,9 @@ class LockObjectManager:
         self.locks: Dict[str, Lock] = {}  # Dictionary to hold lock objects
 
     def acquire_lock(self, key: str, client_id: str, expiry: int) -> Lock:
-        logger.debug("Attempting to acquire lock with key: %s for client: %s", key, client_id)
+        logger.debug("Attempting to acquire lock with key: %s for client: %s with expiry %s", key, client_id, expiry)
         # Create a new lock object and store it in the dictionary.
-        if not key in self.locks: 
+        if key not in self.locks: 
             logger.debug("Creating new lock with key: %s for client: %s", key, client_id)
             lock = Lock(key, client_id, expiry)
             self.locks[key] = lock
@@ -50,12 +50,13 @@ class LockObjectManager:
         return self.locks
 
     def delete_lock(self, key: str, client_id: str) -> bool:
-        # Delete a lock object by its key.
-        logger.info("Deleting lock with key: %s", key)
+        # Delete a lock object by its key. Returns False if not found.
+        logger.info("Deleting lock with key: %s and client_id: %s", key, client_id)
         if key in self.locks:
             if self.locks[key].client_id != client_id:
                 logger.error("Client %s attempted to release lock %s held by client %s", client_id, key, self.locks[key].client_id)
                 raise LockAlreadyHeldException(f"Lock with key {key} is held by another client {self.locks[key].client_id}")
             del self.locks[key]
             return True
+        logger.error("Lock with key: %s not found for deletion", key)
         return False    
